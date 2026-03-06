@@ -26,9 +26,9 @@ export default function TopBar() {
   return (
     <nav
       style={{ marginTop: show ? 0 : "-100px" }}
-      className="shadow-lg duration-[500ms] fixed z-40 w-full text-white bg-jade-standard top-0"
+      className="duration-[500ms] fixed z-40 w-full top-2 px-3"
     >
-      <div className="flex flex-row justify-end w-full">
+      <div className="shadow-lg flex flex-row justify-end w-full text-white bg-jade-light rounded-full border border-white border-4">
         <a className="p-3 w-[fit-content] relative block" href="#hero">
           Acceuil
         </a>
@@ -42,7 +42,7 @@ export default function TopBar() {
           Exploits
         </a>
         <a
-          className="m-1 px-3 rounded-full items-center w-[fit-content] relative bg-gold text-jade-standard flex"
+          className="m-1 px-3 rounded-full items-center w-[fit-content] relative bg-white border border-jade-light text-jade-light flex"
           href="#footer"
         >
           <span className="w-full">Contacts</span>

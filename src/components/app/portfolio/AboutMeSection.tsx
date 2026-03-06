@@ -28,13 +28,6 @@ export default function AboutMeSection() {
           </div>
           <div className="max-w-[600px] p-4 mt-3 flex flex-col">
             <div className="w-full">
-              <h3 className="text-xl font-bold text-jade-standard mb-3">
-                Qui est {" "}
-                <span className="italic text-2xl font-normal text-gold">
-                  Niaina Franco
-                </span>{" "}
-                ?
-              </h3>
               <div className="text-lg text-justify">
                 Je suis un developper fullstack localisé à{" "}
                 <span className="text-jade-light">

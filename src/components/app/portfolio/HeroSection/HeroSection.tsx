@@ -4,28 +4,7 @@ import { Carrousel, CarrouselImage } from "../Carrousel/Carrousel";
 
 export default function HeroSection(){
     return (
-      <div className="h-[600px]">
-        <ul className="flex list-disc text-gray-700 [&>li]:hover:text-jade-light [&>li]:duration-[500ms] gap-[48px] flex-row text-xl pt-6 pr-6 justify-end w-full">
-          <li>
-            <a className="w-[fit-content] relative block" href="#hero">
-              Acceuil
-            </a>
-          </li>
-          <li>
-            <a className="w-[fit-content] relative block" href="#about-me">
-              A propos
-            </a>
-          </li>
-          <li>
-            <a
-              className="w-[fit-content] relative block"
-              href="#achievements"
-            >
-              Exploits
-            </a>
-          </li>
-        </ul>
-        <div id="hero" className="w-full flex relative items-center h-[500px]">
+        <div id="hero" className="w-full flex relative items-center h-[600px]">
           <div className="w-[50%] z-20">
             <div className="w-full px-7 pt-7">
               <h1 className="text-2xl w-full text-gray-700">
@@ -53,7 +32,6 @@ export default function HeroSection(){
             />
           </div>
         </div>
-      </div>
     );
 }
 
