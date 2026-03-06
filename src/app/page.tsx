@@ -8,16 +8,18 @@ import SkillsSection from "@/components/app/portfolio/SkillsSection/SkillsSectio
 
 export default function Portfolio(){
     return (
-        <div>
-            <TopBar />
-            <HeroSection />
-            <div className="flex flex-col gap-[90px]">
-                <AboutMeSection />
-                <SkillsSection />
-                <ProjectsSection />
-                <AchievementsSection />
+      <div>
+        <TopBar />
+        <div className="w-full flex justify-center items-center flex-col">
+            <div className="max-w-[1280px]">
+              <HeroSection />
+              <AboutMeSection />
+              <SkillsSection />
+              <ProjectsSection />
+              <AchievementsSection />
             </div>
-            <Footer />
         </div>
-    )
+        <Footer />
+      </div>
+    );
 }
