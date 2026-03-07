@@ -12,7 +12,7 @@ export default function TopBar() {
   }, []);
   useEffect(() => {
     if (newScrollPos.value <= 200) {
-      setShow(false);
+      setShow(true);
       return;
     }
     if (newScrollPos.value < oldScrollPos.value) {
@@ -26,9 +26,15 @@ export default function TopBar() {
   return (
     <nav
       style={{ marginTop: show ? 0 : "-100px" }}
-      className="duration-[500ms] fixed z-40 w-full top-2 px-3"
+      className="duration-[500ms] fixed z-40 w-full top-3"
     >
-      <div className="shadow-lg flex flex-row justify-end w-full text-white bg-jade-light rounded-full border border-white border-4">
+      <div
+        className={`
+          shadow-lg pl-3 flex flex-row justify-start  w-full text-white bg-jade-light rounded-full
+          md:justify-end
+          lg:justify-end
+        `}
+      >
         <a className="p-3 w-[fit-content] relative block" href="#hero">
           Acceuil
         </a>

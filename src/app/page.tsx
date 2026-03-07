@@ -11,7 +11,7 @@ export default function Portfolio(){
       <div>
         <TopBar />
         <div className="w-full flex justify-center items-center flex-col">
-            <div className="max-w-[1280px]">
+            <div className="w-[430px] lg:w-full md:w-full max-w-[1280px]">
               <HeroSection />
               <AboutMeSection />
               <SkillsSection />
