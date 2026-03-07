@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="w-full">
             <h1 className="text-2xl text-center">Niaina Franco</h1>
             <h2 className="text-xl text-gold text-center">
-              Software developper
+              Créateur de Solution Digitale
             </h2>
           </div>
           <div className="w-full pt-5">

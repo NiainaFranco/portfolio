@@ -8,7 +8,7 @@ export default function HeroSection() {
       id="hero"
       className={`
         p-3
-        w-full flex flex-col relative items-center h-[600px]
+        w-full flex flex-col relative items-center h-[500px]
         mt-[50px]
         lg:flex-row
       `}
