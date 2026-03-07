@@ -26,7 +26,7 @@ export default function TopBar() {
   return (
     <nav
       style={{ marginTop: show ? 0 : "-100px" }}
-      className="duration-[500ms] fixed z-40 w-full top-3"
+      className="duration-[500ms] fixed z-40 w-full top-3 px-2"
     >
       <div
         className={`

@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export default function Footer() {
   return (
-    <footer id="footer" className="bg-jade-standard">
+    <footer id="footer" className="bg-jade-light">
       <div className="mt-[80px] flex justify-between flex-wrap text-white">
         <div className="sm:pl-[70] pl-4 py-8">
           <h1 className="text-3xl">Contacts</h1>
@@ -20,25 +20,22 @@ export default function Footer() {
         <div className="lg:w-[500px] w-full flex justify-center p-7 flex-col items-center">
           <div className="w-full">
             <h1 className="text-2xl text-center">Niaina Franco</h1>
-            <h2 className="text-md text-gray-400 text-center">
+            <h2 className="text-xl text-gold text-center">
               Software developper
             </h2>
           </div>
           <div className="w-full pt-5">
-            <p className="text-xl text-center">
-              N'hésitez pas a m'envoyer un <span className="text-gold">mail</span> ou un{" "}
-              <span className="text-gold">message</span>.
+            <p className="text-lg text-center">
+              N'hésitez pas a m'envoyer un mail ou un message.
             </p>
-            <p className="text-xl pt-2 text-center">
-              J'ai hâte de {" "}
-              <span className="text-gold text-2xl">travailler avec vous</span>.
+            <p className="text-lg pt-2 text-center">
+              J'ai hâte de travailler avec vous.
             </p>
           </div>
         </div>
       </div>
       <div className="bg-black text-sm px-3 text-white sm:text-right p-1">
-        Made by niainafrancoroberto@gmail.com using Next js and
-        Tailwind Css
+        Made by niainafrancoroberto@gmail.com using Next js and Tailwind Css
       </div>
     </footer>
   );
@@ -52,7 +49,7 @@ function ContactText(props: { label?: string; children?: ReactNode }) {
         <h2 className="text-lg">{label} :</h2>
       </div>
       <div>
-        <p className="text-lg text-gray-300">{children}</p>
+        <p className="text-md text-gray-200">{children}</p>
       </div>
     </div>
   );

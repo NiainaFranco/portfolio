@@ -8,52 +8,20 @@ export default function ProjectsSection(){
         <div className="max-w-[1100px]">
           <div className="w-full p-3 flex justify-center flex-wrap gap-[40]">
             <ProjectPresentation
-              name="Darkthunder UI"
+              name="Darkthunder ChatApp"
               image="/images/dark-thunder-ui.png"
-              technos={["React JS", "Tailwind CSS"]}
-              description="L'interface utilisateur d'une application de chat en temps réel designé pour être fluide, intuitive et axé pour les développeurs"
+              technos={["React JS", "Tailwind CSS", "Node js", "Express", "Laravel", "MySql"]}
+              description="Application de messagerie en temps réel composer d’un Interface Utilisateur, API et d’un server Socket"
               sub="Messaging App"
               url="https://github.com/hidden-machina/dark-thunder-ui.git"
             />
             <ProjectPresentation
-              name="Darkthunder Realtime"
-              image="/images/dark-thunder-ui.png"
-              technos={["Node js"]}
-              description="Un service qui permet un transfert d'informations entres les utilisateurs en utilisant un websocket pour que ce soit en temps réel."
-              sub="Socket server"
-              url="https://github.com/hidden-machina/dark-thunder-realtime.git"
-            />
-            <ProjectPresentation
-              name="Darkthunder Backend"
-              image="/images/dark-thunder-ui.png"
-              technos={["PHP Laravel", "MySQL"]}
-              description="L'API qui permet a la solution Darkthunder de marcher."
-              sub="API"
-              url="https://github.com/hidden-machina/dark-thunder-backend.git"
-            />
-            <ProjectPresentation
-              name="Mindi's APK"
+              name="Mindi's"
               image="/images/mindi-s-project.png"
-              technos={["Expo CLI", "React Native"]}
+              technos={["Expo CLI", "React Native", "Node js", "Typescript", "Electron js", "Laravel", "MySql"]}
               description="Une application mobile E-commerce pour faciliter la vie aux clients et aux vendeurs des produits de Mindi's (un business de vente de produit fait en Macramé) en automatisant tout ce qui est commande et publication des produits. La notion de palette de couleur étant importante dans ce business, cela a été mis en valeur dans l'application."
               sub="E-commerce APP"
               url="https://github.com/hidden-machina/mindi-s-apk.git"
-            />
-            <ProjectPresentation
-              name="Mindi's Dashboard"
-              image="/images/mindi-s-project.png"
-              technos={["Node JS", "Electron JS", "React JS", "Typescript"]}
-              description="Une Application Desktop écrit avec node js (electron js) qui servira de backoffice et d'interface utilisateur pour les comptes Administrateur."
-              sub="Dashboard"
-              url="https://github.com/hidden-machina/mindi-s-dashboard.git"
-            />
-            <ProjectPresentation
-              name="Mindi's Backend"
-              image="/images/mindi-s-project.png"
-              technos={["PHP Laravel", "MySQL"]}
-              description="L'API qui fait que toute l'infrastructure reliant Mindi's APK, Mindi's Dashboard et la Base de donnée marche."
-              url="https://github.com/hidden-machina/mindi-s-backend.git"
-              sub="API"
             />
           </div>
         </div>

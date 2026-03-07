@@ -16,14 +16,14 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
   const { name, technos, image, description, sub, url } = props;
 
   return (
-    <div className="sm:w-[450px] shadow-xl justify-between flex flex-col gap-6 pt-8 p-7 bg-jade-standard rounded-3xl text-white">
+    <div className="sm:w-[450px] shadow-lg justify-between flex flex-col gap-6 pt-8 p-7 border border-gray-200 rounded-3xl text-white">
       <div>
         <h1 className="text-2xl font-bold text-gold">{name}</h1>
-        <h2 className="text-lg text-gray-400">{sub}</h2>
-        <p className="pt-2 text-md text-gray-200 text-justify">{description}</p>
+        <h2 className="text-lg text-jade-light">{sub}</h2>
+        <p className="pt-2 text-md text-gray-700 text-justify">{description}</p>
       </div>
       {image && (
-        <div className="p-3 bg-jade-light rounded-3xl">
+        <div className="p-3 rounded-3xl">
           <div className="w-full overflow-hidden rounded-xl shadow-lg flex justify-center min-h-[130]">
             <Image
               style={{
@@ -44,10 +44,10 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
         <div className="flex-1 text-black flex">
           <div className="w-full flex justify-center items-center">
             <a
-              className="rounded-xl py-2 px-4 text-jade-standard shadow-lg shadow-[#5a8f7640] bg-gold"
+              className="rounded-full py-2 px-4 text-white shadow-md bg-jade-light"
               href={url}
             >
-              Repository
+              Repository Link
             </a>
           </div>
         </div>
@@ -63,7 +63,7 @@ function AutoSlider(props: { languages: string[] }) {
       <ClientSideAutoSlider animationDuration="6s" itemNumber={languages.length}>
         {languages.map((language, index) => (
           <span
-            className="min-w-[100px] whitespace-nowrap text-ellipsis overflow-hidden p-2 py-1 border rounded-full text-center"
+            className="min-w-[100px] text-jade-light  whitespace-nowrap text-ellipsis overflow-hidden p-2 py-1 border rounded-full text-center"
             key={"auto-slider-" + language + "-" + index}
           >
             {language}
