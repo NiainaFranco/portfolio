@@ -19,24 +19,26 @@ export default function HeroSection() {
           <h1 className="text-6xl">
             Niaina Franco <strong className="text-secondary">ROBERTO</strong>
           </h1>
-          <p className="mt-4">
-            I'm a Webpage designer, Software engeneer and IT consultant for
-            production level Web-applications optimization.{" "}
-          </p>
-          <p className="mt-4">
-            I develop{" "}
-            <strong className="text-primary-600">Web-applications</strong>,
-            create visual interface for{" "}
-            <strong className="text-primary-600">Showcase Webpage</strong>,
-             and optimize your
-            production system based on your{" "} 
-            <strong className="text-primary-600">target number of clients</strong>,
-            and your{" "}
-            <strong className="text-primary-600">budgets</strong>.
-          </p>
-          <p className="mt-4">
-            My work area focus on Javascript and PHP projects.{" "}
-          </p>
+          <div className="text-lg text-justify">
+            <p className="mt-4">
+              I'm a Webpage designer, Software engeneer and IT consultant for
+              production level Web-applications optimization.{" "}
+            </p>
+            <p className="mt-4">
+              I develop{" "}
+              <strong className="text-secondary">Web-applications</strong>,
+              create visual interfaces for{" "}
+              <strong className="text-secondary">Showcase Webpage</strong>,
+               and optimize your
+              production system based on your{" "} 
+              <strong className="text-secondary">target number of clients</strong>,
+              and {" "}
+              <strong className="text-secondary">budgets</strong>.
+            </p>
+            <p className="mt-4">
+              My work area focus on Web-applications projects using javascript.{" "}
+            </p>
+          </div>
         </div>
         <div className="flex gap-3">
           <BentoLink label={"+10"} aux="Frameworks and tools used" size={165} />

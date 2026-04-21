@@ -30,25 +30,22 @@ export default function TopBar() {
     >
       <div
         className={`
-          shadow-lg pl-3 flex flex-row justify-start  w-full text-white bg-jade-light rounded-full
+          shadow-sm pl-3 backdrop-blur-sm flex flex-row justify-start font-semibold w-full text-primary-800 rounded-full
           md:justify-end
           lg:justify-end
         `}
       >
         <a className="p-3 w-[fit-content] relative block" href="#hero">
-          Acceuil
+          Home
         </a>
-        <a className="p-3 w-[fit-content] relative block" href="#about-me">
-          A propos
+        <a className="p-3 w-[fit-content] relative block" href="#services">
+          Services
         </a>
         <a className="p-3 w-[fit-content] relative block" href="#projects">
           Projets
         </a>
-        <a className="p-3 w-[fit-content] relative block" href="#achievements">
-          Exploits
-        </a>
         <a
-          className="m-1 px-3 rounded-full items-center w-[fit-content] relative bg-white border border-jade-light text-jade-light flex"
+          className="m-1 px-3 rounded-full items-center w-[fit-content] text-white relative bg-primary-500 flex"
           href="#footer"
         >
           <span className="w-full">Contacts</span>

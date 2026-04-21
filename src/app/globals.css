@@ -6,6 +6,12 @@
   --breakpoint-mb: 300px;
 }
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @font-face {
   font-family: outlined;
   font-style: normal;
