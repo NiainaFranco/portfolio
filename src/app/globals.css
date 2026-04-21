@@ -3,20 +3,31 @@
 :root {
   --background: #fafafa;
   --foreground: #0a0a0a;
-  --black: #1d1d1d;
-  --jade-dark:#081b1b ;
-  --jade-standard: #203b37;
-  --jade-light:#5a8f76 ;
-  --gold:#e2a258 ;
-  --breakpoint-mb:300px
+  --breakpoint-mb: 300px;
 }
 
-@theme inline {
-  --color-black: var(--black);
-  --color-jade-dark: var(--jade-dark);
-  --color-jade-standard: var(--jade-standard);
-  --color-jade-light: var(--jade-light);
-  --color-gold: var(--gold);
+@font-face {
+  font-family: outlined;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/font/just-sans-outline/outlined-bold.otf") format("woff2");
+}
+
+@theme {
+  --font-outlined: "outlined", sans-serif;
+  --color-secondary: #9524E5;
+  --color-primary-50: #F1FCE8;
+  --color-primary-100: #D7F8BF;
+  --color-primary-200: #BDF396;
+  --color-primary-300: #A3EE6D;
+  --color-primary-400: #89E944;
+  --color-primary-500: #74E524;
+  --color-primary-600: #5BBB16;
+  --color-primary-700: #479211;
+  --color-primary-800: #33690C;
+  --color-primary-900: #1F4007;
+  --color-primary-950: #0B1703;
 }
 
 body {
