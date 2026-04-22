@@ -57,16 +57,16 @@ export default function HeroSection() {
               alt="presentation image"
             />
           </div>
-          <div role="overlay" className="w-full z-20 h-full bg-secondary opacity-40 rounded-3xl absolute"></div>
+          <div role="overlay" className="w-full z-20 h-full bg-secondary opacity-60 rounded-3xl absolute"></div>
           <div className="absolute z-30 tracking-widest font-outlined pl-6">
-            <h1 className="text-[6em] text-primary-500">Developer</h1>
-            <h1 className="text-[6em] text-primary-500 opacity-80">
+            <h1 className="text-[6em] text-primary-300">Developer</h1>
+            <h1 className="text-[6em] text-primary-300 opacity-40">
               Developer
             </h1>
             <h1 className="text-[6em] text-white">
               Developer
             </h1>
-            <h1 className="text-[6em] text-primary-500 opacity-40">
+            <h1 className="text-[6em] text-primary-300 opacity-40">
               Developer
             </h1>
           </div>

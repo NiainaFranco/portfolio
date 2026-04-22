@@ -20,7 +20,16 @@ export default function ProjectsSection(){
               ]}
               description="Realtime channel based messaging app using a WebSocket server paired with a Laravel Backend API and a React JS made UI."
               sub="Messaging App"
-              url="https://github.com/hidden-machina/dark-thunder-ui.git"
+              urls={[
+                {
+                  flag: "Front",
+                  link: "https://github.com/hidden-machina/dark-thunder-ui.git",
+                },
+                {
+                  flag: "API",
+                  link: "https://github.com/hidden-machina/dark-thunder-api.git",
+                },
+              ]}
             />
             <ProjectPresentation
               name="Mindi's"
@@ -28,7 +37,12 @@ export default function ProjectsSection(){
               technos={["Nest JS", "Angular", "Tailwind CSS", "PostgreSQL"]}
               description="All in one ecommerce management for Macramer products that has an admin dashboard page to manage what the customers can see in the presentation interface, and the sayed presentation interface made for customers to browse and order products catalogue."
               sub="E-commerce APP"
-              url="https://github.com/hidden-machina/mindi-s-apk.git"
+              urls={[
+                {
+                  flag: "APK",
+                  link: "https://github.com/hidden-machina/mindi-s-apk.git",
+                },
+              ]}
             />
           </div>
         </div>

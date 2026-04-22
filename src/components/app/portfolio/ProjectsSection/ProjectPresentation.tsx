@@ -5,12 +5,15 @@ export type ProjectPresentationPropsType = {
   sub?: string;
   description?: string;
   technos: string[];
-  url?: string;
+  urls?: {
+    link: string,
+    flag: "Front" | "API" | "APK"
+  }[];
   image?: string
 };
 
 export function ProjectPresentation(props: ProjectPresentationPropsType) {
-  const { name, technos, image, description, sub, url } = props;
+  const { name, technos, image, description, sub, urls } = props;
 
   return (
     <div className="sm:w-[450px] h-[fit-content] shadow-md flex flex-col gap-6 pt-8 p-7 border border-primary-200 rounded-3xl">
@@ -40,16 +43,25 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
         <div className="overflow-hidden w-full relative">
           <TehcnoLister languages={technos} />
         </div>
-        <div className="text-black pt-5 flex">
-          <div className="w-full flex border border-primary-500 rounded-xl overflow-hidden justify-end">
-            <input type="text" className="w-full h-full p-2" readOnly value={url} />
-            <a
-              className="p-2 text-white shadow-md bg-primary-500 rounded-r-xl"
-              href={url}
-            >
-              <img className="w-[40px] h-[40px]" src="/icons/github.svg" alt="github icon" />
-            </a>
-          </div>
+        <div className="text-black pt-5 flex flex-col gap-3">
+          {
+            urls?.map((url, index)=>{
+              return(
+                <div key={"project-presentation-" + index + url.link} className="w-full h-[50px] flex border border-primary-500 rounded-xl overflow-hidden justify-center items-center">
+                  <input type="text" className="w-full px-3 h-full" readOnly value={url.link} />
+                  <a
+                    className="py-3 w-[fit-content] pl-2 pr-5 pl-1 flex gap-2 items-center text-white shadow-md bg-primary-500 rounded-r-xl"
+                    href={url.link}
+                  >
+                    <img className="w-[40px] h-[40px]" src="/icons/github.svg" alt="github icon" />
+                    <p className="pr-3 font-bold text-white">
+                      {url.flag}
+                    </p>
+                  </a>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     </div>

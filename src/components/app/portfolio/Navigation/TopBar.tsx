@@ -25,30 +25,32 @@ export default function TopBar() {
   }, [newScrollPos]);
   return (
     <nav
-      style={{ marginTop: show ? 0 : "-100px" }}
-      className="duration-[500ms] fixed z-40 w-full top-3 px-2"
+      style={{ top: show ? "15px" : "-100px" }}
+      className="duration-[500ms] sticky z-40 w-full top-3 px-7"
     >
       <div
         className={`
-          shadow-sm pl-3 backdrop-blur-sm flex flex-row justify-start font-semibold w-full text-primary-800 rounded-full
+          shadow-sm pl-3 p-1 backdrop-blur-sm flex flex-row justify-start font-semibold w-full bg-primary-500 rounded-2xl
+          [&>a]:rounded-xl
+          [&>a]:hover:bg-primary-400
+          [&>a]:duration-[500ms]
+          [&>a]:p-2
+          text-white
           md:justify-end
           lg:justify-end
         `}
       >
-        <a className="p-3 w-[fit-content] relative block" href="#hero">
+        <a className="w-[fit-content] relative block" href="#hero">
           Home
         </a>
-        <a className="p-3 w-[fit-content] relative block" href="#services">
+        <a className="w-[fit-content] relative block" href="#services">
           Services
         </a>
-        <a className="p-3 w-[fit-content] relative block" href="#projects">
+        <a className="w-[fit-content] relative block" href="#projects">
           Projets
         </a>
-        <a
-          className="m-1 px-3 rounded-full items-center w-[fit-content] text-white relative bg-primary-500 flex"
-          href="#footer"
-        >
-          <span className="w-full">Contacts</span>
+        <a className="w-[fit-content] relative block" href="#footer">
+          Contacts
         </a>
       </div>
     </nav>

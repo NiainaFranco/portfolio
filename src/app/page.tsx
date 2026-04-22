@@ -12,13 +12,14 @@ export default function Portfolio(){
     return (
       <div>
         <div className="w-full text-primary-950 flex justify-center items-center flex-col">
-            <TopBar />
-            <div className="w-[430px] mt-[40px] lg:w-full md:w-full max-w-[1280px]">
+            <div className="w-[430px] relative lg:w-full md:w-full max-w-[1280px]">
+              <TopBar />
               <HeroSection />
               <SectionSeparator>Services</SectionSeparator> 
               <OfferSection />
               <SectionSeparator>Projects</SectionSeparator> 
               <ProjectsSection />
+              <SectionSeparator>Contacts</SectionSeparator> 
               {/* <AboutMeSection />
               <SkillsSection />
               <AchievementsSection /> */}

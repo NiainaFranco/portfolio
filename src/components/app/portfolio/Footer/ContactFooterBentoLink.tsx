@@ -5,7 +5,10 @@ export function ContactFooterBentoLink(props: {width?: number,children?: string,
             width: width,
         }}>
             <img className="w-[40px] h-[40px]" src={`/icons/${iconName}.svg`} alt="" />
-            <span className="text-xl">{children}</span>
+            {
+                children &&
+                <span className="text-xl text-white">{children}</span>
+            }
         </a>        
     )
 }
