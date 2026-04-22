@@ -7,7 +7,7 @@ export default function Footer() {
     <footer id="footer">
       <div className="mt-[80px] p-7">
         <div className="flex justify-between gap-3">
-          <div className="w-[500px] rounded-2xl p-6">
+          <div className="w-[500px] rounded-2xl p-7">
             <h1 className="text-2xl">Niaina Franco <strong className="text-secondary">ROBERTO</strong></h1>
             <p className="text-4xl text-primary-900">Software Developer</p>
             <div className="mt-5 text-lg">
@@ -31,7 +31,7 @@ export default function Footer() {
             <a href="#projects">Projects</a>
           </div>
         </div>
-        <div className="w-full flex flex-wrap pt-3 gap-2">
+        <div className="w-full flex flex-wrap p-7 gap-2">
           <ContactFooterBentoLink iconName="linkedIn">
             Niaina Franco Roberto
           </ContactFooterBentoLink>
@@ -46,7 +46,7 @@ export default function Footer() {
           </ContactFooterBentoLink>
         </div>
       </div>
-      <div className="text-lg text-end px-7 p-1 bg-secondary text-white font-bold rounded-t-xl">
+      <div className="text-lg text-end px-7 p-1 bg-primary-950 text-white font-bold rounded-t-xl">
         Made by niainafrancoroberto@gmail.com using Next js and Tailwind Css
       </div>
     </footer>

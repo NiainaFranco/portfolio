@@ -11,7 +11,7 @@ export default function HeroSection() {
         p-7
         w-full flex relative
         justify-between
-        gap-3
+        gap-7
       `}
     >
       <div className="w-[550px] flex flex-col gap-3">
@@ -42,41 +42,47 @@ export default function HeroSection() {
         </div>
         <div className="flex gap-3">
           <BentoLink label={"+10"} aux="Frameworks and tools used" size={165} />
-          <BentoLink label={"7"} aux="Projects shiped" size={165} />
-          <BentoLink label={"0$"} aux="To make a quote" size={165} />
+          <BentoLink label={"7"} href="#projects" aux="Projects shiped" size={165} />
+          <BentoLink label={"0$"} href="#contacts" aux="To make a quote" size={165} />
         </div>
       </div>
-      <div className="w-full flex flex-col gap-3">
-        <div className="bg-primary-500 h-[100px] gap-3  p-3 rounded-3xl flex w-full">
-          <ContactBentoLink iconName="linkedIn" size={80} />
-          <ContactBentoLink iconName="gmail" size={80} />
-          <ContactBentoLink iconName="whatsapp" size={80} />
-          <ContactBentoLink iconName="github" size={80} />
-        </div>
-        <div className="h-[460px] bg-secondary relative rounded-3xl">
+      <div className="w-full flex">
+        <div className="h-full flex-1 bg-secondary relative rounded-tl-3xl rounded-b-3xl">
           <div className="w-full z-10 h-full overflow-hidden rounded-3xl absolute">
             <Image
               height={900}
-              className="w-[490px] h-[490px]"
+              className="min-w-[590px] min-h-[590px]"
               width={900}
               src="/images/presentation-image.png"
               alt="presentation image"
             />
           </div>
-          <div className="w-full z-20 h-full bg-secondary opacity-50 rounded-3xl absolute"></div>
+          <div role="overlay" className="w-full z-20 h-full bg-secondary opacity-40 rounded-3xl absolute"></div>
           <div className="absolute z-30 tracking-widest font-outlined pl-6">
-            <h1 className="text-[5em] text-bold text-primary-500">Developer</h1>
-            <h1 className="text-[5em] text-bold text-primary-500 opacity-80">
+            <h1 className="text-[6em] text-primary-500">Developer</h1>
+            <h1 className="text-[6em] text-primary-500 opacity-80">
               Developer
             </h1>
-            <h1 className="text-[5em] text-bold text-white">
+            <h1 className="text-[6em] text-white">
               Developer
             </h1>
-            <h1 className="text-[5em] text-bold text-primary-500 opacity-40">
+            <h1 className="text-[6em] text-primary-500 opacity-40">
               Developer
             </h1>
           </div>
         </div>
+          <div className="h-full flex flex-col justify-between w-[100px]">
+            <div className="flex-1 bg-secondary rounded-r-3xl">
+              
+            </div>
+            <div className="w-[100px] z-30 bg-secondary">
+              <div className="rounded-tl-3xl px-3 pt-3 flex-col flex gap-3 bg-[var(--background)]">
+                <ContactBentoLink href="https://www.linkedin.com/in/franco-roberto-657241276/" iconName="linkedIn" size={80} />
+                <ContactBentoLink href="https://github.com/NiainaFranco/" iconName="github" size={80} />
+                <ContactBentoLink iconName="gmail" size={80} />
+              </div>
+            </div>
+          </div >
       </div>
     </div>
   );

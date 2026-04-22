@@ -5,7 +5,7 @@ export default function ProjectsSection(){
     return (
       <div id="projects" className="w-full flex flex-col items-center">
         <div className="w-full">
-          <div className="w-full p-3 flex justify-center flex-wrap gap-[100px]">
+          <div className="w-full p-3 flex justify-center flex-wrap gap-3">
             <ProjectPresentation
               name="Darkthunder ChatApp"
               image="/images/dark-thunder-ui.png"

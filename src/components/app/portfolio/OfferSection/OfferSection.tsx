@@ -2,7 +2,7 @@ export function OfferSection() {
   return (
     <div id="services" className="w-full p-7 gap-7 flex flex-col items-center">
       <div className="w-full">
-        <div className="w-full flex flex-col">
+        <div className="w-full flex flex-col gap-7">
           <div className="flex">
             <div className="w-[400px] h-[400px] flex justify-center items-center p-2">
               <img
