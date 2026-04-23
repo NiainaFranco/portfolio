@@ -1,8 +1,11 @@
+"use client"
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { OfferService } from "./OfferService"
 
 export function OfferSection() {
   return (
-    <div id="services" className="w-full p-7 gap-7 flex flex-col items-center">
+     <Parallax speed={10} easing={[1,2,0.4,1]}>
+     <div id="services" className="w-full p-7 gap-7 flex flex-col items-center">
       <div className="w-full">
         <div className="w-full flex flex-col gap-7">
           <OfferService
@@ -84,5 +87,7 @@ export function OfferSection() {
         </div>
       </div>
     </div>
+     
+    </Parallax>
   );
 }

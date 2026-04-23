@@ -37,7 +37,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
         </div>
       )}
       <div>
-        <p className="pt-2 text-md text-gray-700 text-justify">{description}</p>
+        <p className="pt-2 text-md text-justify">{description}</p>
       </div>
       <div className="flex flex-col">
         <div className="overflow-hidden w-full relative">

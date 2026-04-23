@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export default function TopBar() {
   const [oldScrollPos, setOldScrollPos] = useState({ value: 0 });
@@ -24,35 +25,36 @@ export default function TopBar() {
     }
   }, [newScrollPos]);
   return (
-    <nav
-      style={{ top: show ? "15px" : "-100px" }}
-      className="duration-[500ms] sticky z-40 w-full top-3 px-7"
-    >
-      <div
-        className={`
-          shadow-sm pl-3 p-1 backdrop-blur-sm flex flex-row justify-start font-semibold w-full bg-primary-500 rounded-2xl
-          [&>a]:rounded-xl
-          [&>a]:hover:bg-primary-400
-          [&>a]:duration-[500ms]
-          [&>a]:p-2
-          text-white
-          md:justify-end
-          lg:justify-end
-        `}
+       <nav
+        style={{ top: show ? "15px" : "-100px" }}
+        className="duration-[500ms] sticky z-40 w-full top-3 px-7"
       >
-        <a className="w-[fit-content] relative block" href="#hero">
-          Home
-        </a>
-        <a className="w-[fit-content] relative block" href="#services">
-          Services
-        </a>
-        <a className="w-[fit-content] relative block" href="#projects">
-          Projets
-        </a>
-        <a className="w-[fit-content] relative block" href="#footer">
-          Contacts
-        </a>
-      </div>
-    </nav>
+        <div
+          className={`
+            shadow-sm pl-3 p-1 backdrop-blur-sm flex flex-row justify-start font-semibold w-full bg-primary-500 rounded-2xl
+            [&>a]:rounded-xl
+            [&>a]:hover:bg-primary-400
+            [&>a]:duration-[500ms]
+            [&>a]:p-2
+            text-white
+            md:justify-end
+            lg:justify-end
+          `}
+        >
+          <a className="w-[fit-content] relative block" href="#hero">
+            Home
+          </a>
+          <a className="w-[fit-content] relative block" href="#services">
+            Services
+          </a>
+          <a className="w-[fit-content] relative block" href="#projects">
+            Projets
+          </a>
+          <a className="w-[fit-content] relative block" href="#footer">
+            Contacts
+          </a>
+        </div>
+      </nav>     
+
   );
 }
