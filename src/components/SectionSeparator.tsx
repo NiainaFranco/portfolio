@@ -4,12 +4,10 @@ import { Parallax } from "react-scroll-parallax";
 
 export function SectionSeparator(props: {children?: ReactNode}){
     return(
-        <Parallax speed={-5}  scale={[1, 0.9 ]} easing={[1,2,0.8,0.3]}>
         <div className="w-full py-[70px] flex justify-center items-center">
           <h1 className="text-5xl bg-primary-500 p-5 text-white font-extrabold">
             {props.children}
           </h1>
         </div>
-        </Parallax>
     )
 }

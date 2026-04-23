@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
 
-export function OfferService(props: {
+export function ServiceOffer(props: {
     illustration: string;
     title: ReactNode;
     developement: ReactNode;
-    variation?: boolean
+    children?: ReactNode
 }){
-    const {developement, illustration, variation, title} = props
+    const {developement, children, illustration, title} = props
     return (
-      <div className={`flex p-7 ${variation && "bg-gray-200"} rounded-3xl`}>
+      <div className={`w-[900px] flex p-7 bg-white rounded-3xl`}>
         <div className="w-[300px] h-[300px] flex justify-center items-center p-2">
           <img
           height={300}
@@ -23,11 +23,14 @@ export function OfferService(props: {
                 title
             }
           </h2>
-          <div className="pt-3 text-md text-justify flex flex-col gap-2">
+          <div className="pt-3 text-md text-justify flex flex-col gap-3">
             {
                 developement
             }
           </div>
+            {
+              children 
+            }
         </div>
       </div>
     );

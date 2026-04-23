@@ -3,8 +3,8 @@ import AchievementsSection from "@/components/app/portfolio/AchievementsSection/
 import Footer from "@/components/app/portfolio/Footer/Footer";
 import HeroSection from "@/components/app/portfolio/HeroSection/HeroSection";
 import TopBar from "@/components/app/portfolio/Navigation/TopBar";
-import { OfferSection } from "@/components/app/portfolio/OfferSection/OfferSection";
 import ProjectsSection from "@/components/app/portfolio/ProjectsSection/ProjectsSection";
+import { ServicesSection } from "@/components/app/portfolio/ServicesSection/ServicesSection";
 import SkillsSection from "@/components/app/portfolio/SkillsSection/SkillsSection";
 import { SectionSeparator } from "@/components/SectionSeparator";
 
@@ -16,7 +16,7 @@ export default function Portfolio(){
               <TopBar />
               <HeroSection />
               <SectionSeparator>Services</SectionSeparator> 
-              <OfferSection />
+              <ServicesSection />
               <SectionSeparator>Projects</SectionSeparator> 
               <ProjectsSection />
               <SectionSeparator>Contacts</SectionSeparator> 

@@ -1,14 +1,15 @@
 "use client"
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import { OfferService } from "./OfferService"
+import { ServiceOffer } from "./ServiceOffer"
+import { ReactNode } from "react";
 
-export function OfferSection() {
+export function ServicesSection() {
   return (
      <Parallax speed={10} easing={[1,2,0.4,1]}>
-     <div id="services" className="w-full p-7 gap-7 flex flex-col items-center">
+     <div id="services" className="w-full rounded-4xl bg-primary-500 p-7 gap-7 flex flex-col items-center">
       <div className="w-full">
         <div className="w-full flex flex-col gap-7">
-          <OfferService
+          <ServiceOffer
             illustration="rocket-illustration"
             developement={
               <>
@@ -32,9 +33,15 @@ export function OfferSection() {
                 your online visibility
               </p>
             }
-          variation
-          />
-          <OfferService
+          >
+            <div className="pt-5">
+              <AnchorButton>
+                Get started
+              </AnchorButton>
+            </div>
+          </ServiceOffer>
+          <div className="flex w-full justify-end">
+           <ServiceOffer
             illustration="brick-illustration"
             developement={
               <>
@@ -58,9 +65,16 @@ export function OfferSection() {
                 </span>
               </p>
             }
-          />
-          <OfferService
-          variation
+          >
+            <div className="pt-5">
+              <AnchorButton>
+                Start Building
+              </AnchorButton>
+            </div>
+          </ServiceOffer>
+            
+          </div>
+         <ServiceOffer
             illustration="collaboration-illustration"
             developement={
               <>
@@ -83,11 +97,27 @@ export function OfferSection() {
                 as professionals on your projects.
               </p>
             }
-          />
+          >
+            <div className="pt-5">
+              <AnchorButton>
+                Contact now
+              </AnchorButton>
+            </div>
+          </ServiceOffer>
         </div>
       </div>
     </div>
      
     </Parallax>
   );
+}
+
+function AnchorButton(props: {
+  href?:string
+  children?: ReactNode
+}){
+  const {href, children} = props
+  return(
+    <a href={href} className="rounded-xl w-[fit-content] bg-secondary px-3 block py-2 text-white">{children}</a>    
+  )
 }
