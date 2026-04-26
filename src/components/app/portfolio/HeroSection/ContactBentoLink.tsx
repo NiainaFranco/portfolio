@@ -1,11 +1,13 @@
-export function ContactBentoLink(props: {size: number, iconName: string, href?: string}){
-    const {size, href, iconName} = props;
+import { ReactNode } from "react";
+
+export function ContactBentoLink(props: {size: number, icon: ReactNode, href?: string}){
+    const {size, href, icon } = props;
     return(
-        <a href={href} className="hover:shadow-md hover:bg-primary-400 duration-[500ms] bg-primary-500 rounded-xl p-3 block" style={{
+        <a href={href} className="shadow-sm hover:shadow-md group hover:bg-[var(--background)] duration-[500ms] bg-primary-600 rounded-xl p-3 block" style={{
             width: size,
             height: size
         }}>
-            <img className="" src={`/icons/${iconName}.svg`} alt="" />
+            {icon}
         </a>        
     )
 }

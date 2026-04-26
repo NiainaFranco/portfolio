@@ -1,11 +1,12 @@
-import { SectionTitle } from "../SkillsSection/SkillsSection";
+import { SectionSeparator } from "@/components/SectionSeparator";
 import { ProjectPresentation } from "./ProjectPresentation";
 
 export default function ProjectsSection(){
     return (
       <div id="projects" className="w-full flex flex-col items-center">
-        <div className="w-full">
-          <div className="w-full p-3 flex justify-center flex-wrap gap-3">
+        <div className="w-[var(--max-width)] p-7">
+          <SectionSeparator>Projects</SectionSeparator>
+          <div className="w-full p-3 py-7 flex justify-center flex-wrap gap-3">
             <ProjectPresentation
               name="Darkthunder ChatApp"
               image="/images/dark-thunder-ui.png"

@@ -8,11 +8,11 @@ export function ServiceOffer(props: {
 }){
     const {developement, children, illustration, title} = props
     return (
-      <div className={`w-[900px] flex p-7 bg-white rounded-3xl`}>
-        <div className="w-[300px] h-[300px] flex justify-center items-center p-2">
+      <div className={`w-[900px] items-center flex pl-[40px] p-7 border-l-12 border-primary-500 bg-[var(--background)] overflow-hidden relative`}>
+        <div className="w-[200px] h-[200px] flex justify-center items-center p-2">
           <img
-          height={300}
-          width={300}
+          height={200}
+          width={200}
             src={`/images/illustrations/${illustration}.png`}
             alt="rocket illustration"
           />

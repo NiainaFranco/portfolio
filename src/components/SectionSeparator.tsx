@@ -4,8 +4,8 @@ import { Parallax } from "react-scroll-parallax";
 
 export function SectionSeparator(props: {children?: ReactNode}){
     return(
-        <div className="w-full py-[70px] flex justify-center items-center">
-          <h1 className="text-5xl bg-primary-500 p-5 text-white font-extrabold">
+        <div className="w-full py-lg flex justify-start items-center">
+          <h1 className="text-4xl w-full p-5 text-black border-6 border-primary-700 bg-primary-500 font-extrabold">
             {props.children}
           </h1>
         </div>

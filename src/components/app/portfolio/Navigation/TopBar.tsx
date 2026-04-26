@@ -12,7 +12,7 @@ export default function TopBar() {
     });
   }, []);
   useEffect(() => {
-    if (newScrollPos.value <= 200) {
+    if (newScrollPos.value <= 50) {
       setShow(true);
       return;
     }
@@ -26,8 +26,8 @@ export default function TopBar() {
   }, [newScrollPos]);
   return (
        <nav
-        style={{ top: show ? "15px" : "-100px" }}
-        className="duration-[500ms] sticky z-40 w-full top-3 px-7"
+        style={{ top: show ? "15px" : "-200px" }}
+        className="duration-[300ms] sticky z-40 w-[var(--max-width)] max-w-[var(--max-width)] top-3 px-7"
       >
         <div
           className={`
@@ -36,7 +36,9 @@ export default function TopBar() {
             [&>a]:hover:bg-primary-400
             [&>a]:duration-[500ms]
             [&>a]:p-2
-            text-white
+            text-black
+            border-4
+            border-primary-700
             md:justify-end
             lg:justify-end
           `}

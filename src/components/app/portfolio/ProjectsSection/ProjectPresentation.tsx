@@ -43,14 +43,14 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
         <div className="overflow-hidden w-full relative">
           <TehcnoLister languages={technos} />
         </div>
-        <div className="text-black pt-5 flex flex-col gap-3">
+        <div className="text-gray-800 pt-5 flex flex-col gap-3">
           {
             urls?.map((url, index)=>{
               return(
                 <div key={"project-presentation-" + index + url.link} className="w-full h-[50px] flex border border-primary-500 rounded-xl overflow-hidden justify-center items-center">
                   <input type="text" className="w-full px-3 h-full" readOnly value={url.link} />
                   <a
-                    className="py-3 w-[fit-content] pl-2 pr-5 pl-1 flex gap-2 items-center text-white shadow-md bg-primary-500 rounded-r-xl"
+                    className="py-3 w-[fit-content] pl-2 pr-5 pl-1 flex gap-2 items-center text-white shadow-md bg-primary-600 rounded-r-xl"
                     href={url.link}
                   >
                     <img className="w-[40px] h-[40px]" src="/icons/github.svg" alt="github icon" />
