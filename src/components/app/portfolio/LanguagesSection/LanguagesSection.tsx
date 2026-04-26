@@ -7,7 +7,7 @@ export function LanguagesSection(){
   const database = ["PostgreSQL", "Sqlite", "MySQL"]
   const deployementPlatform = ["AWS", "Vercel"]
     return (
-      <div className="w-[var(--max-width)] p-7">
+      <section id="tools" className="w-[var(--max-width)] p-7">
         <div>
           <SectionSeparator>Tools</SectionSeparator>
         </div>
@@ -57,6 +57,6 @@ export function LanguagesSection(){
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
 }

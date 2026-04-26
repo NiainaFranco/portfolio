@@ -4,6 +4,7 @@ import Footer from "@/components/app/portfolio/Footer/Footer";
 import HeroSection from "@/components/app/portfolio/HeroSection/HeroSection";
 import { LanguagesSection } from "@/components/app/portfolio/LanguagesSection/LanguagesSection";
 import TopBar from "@/components/app/portfolio/Navigation/TopBar";
+import { PricingSection } from "@/components/app/portfolio/PricingSection/PricingSection";
 import ProjectsSection from "@/components/app/portfolio/ProjectsSection/ProjectsSection";
 import { ServicesSection } from "@/components/app/portfolio/ServicesSection/ServicesSection";
 import { SectionSeparator } from "@/components/SectionSeparator";
@@ -18,6 +19,7 @@ export default function Portfolio(){
               <ServicesSection />
               <LanguagesSection />
               <ProjectsSection />
+              <PricingSection />
               {/* <AboutMeSection />
               <AchievementsSection /> */}
               <Footer />

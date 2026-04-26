@@ -3,7 +3,7 @@ import { DiagonalArrowIcon } from "@/components/DynamiqueIcons/DiagonalArrowIcon
 export function BentoLink(props: {size: number, aux: string, label: string, href?: string}){
     const {size, aux, href, label} = props;
     return(
-        <a href={href} className="group shadow-lg border-4 border-primary-800 duration-[500ms] text-black hover:text-primary-800 hover:shadow-md hover:bg-[var(--background)] p-3 block relative rounded-3xl bg-primary-500" style={{
+        <a href={href} className="group shadow-lg border-4 border-primary-800 duration-[500ms] text-black hover:text-primary-800 hover:shadow-md hover:bg-[var(--background)] p-3 block relative rounded-2xl bg-primary-500" style={{
             width: size,
             height: size
         }}>

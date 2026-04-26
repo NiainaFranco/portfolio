@@ -31,7 +31,7 @@ export default function TopBar() {
       >
         <div
           className={`
-            shadow-sm pl-3 p-1 backdrop-blur-sm flex flex-row justify-start font-semibold w-full bg-primary-500 rounded-2xl
+            shadow-sm pl-3 p-1 backdrop-blur-sm flex flex-row justify-start font-semibold w-full bg-primary-500 rounded-xl
             [&>a]:rounded-xl
             [&>a]:hover:bg-primary-400
             [&>a]:duration-[500ms]
@@ -49,8 +49,14 @@ export default function TopBar() {
           <a className="w-[fit-content] relative block" href="#services">
             Services
           </a>
+          <a className="w-[fit-content] relative block" href="#tools">
+            Tools
+          </a>
           <a className="w-[fit-content] relative block" href="#projects">
             Projets
+          </a>
+          <a className="w-[fit-content] relative block" href="#pricing">
+            pricing
           </a>
           <a className="w-[fit-content] relative block" href="#footer">
             Contacts
