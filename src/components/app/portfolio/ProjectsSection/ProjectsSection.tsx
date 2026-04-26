@@ -6,7 +6,7 @@ export default function ProjectsSection(){
       <div id="projects" className="w-full flex flex-col items-center">
         <div className="w-[var(--max-width)] p-7">
           <SectionSeparator>Projects</SectionSeparator>
-          <div className="w-full p-3 py-7 flex justify-center flex-wrap gap-3">
+          <div className="w-full py-7 flex justify-start flex-col gap-5">
             <ProjectPresentation
               name="Darkthunder ChatApp"
               image="/images/dark-thunder-ui.png"
