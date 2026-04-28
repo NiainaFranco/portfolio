@@ -15,7 +15,6 @@ export default function HeroSection() {
       className={`
         lg:p-7
         p-3
-
         w-full
         lg:w-[var(--max-width)] flex flex-col-reverse sm:flex-row lg:flex-row relative
         justify-between
@@ -26,7 +25,7 @@ export default function HeroSection() {
         <div className="w-full h-[fit-content] lg:h-[395px] rounded-3xl py-6">
           <div className="hidden lg:block">
             <h1 className="text-6xl pb-3">
-              Niaina Franco <strong className="text-secondary">ROBERTO</strong>
+              Niaina Franco <strong className="text-secondary font-damion">ROBERTO</strong>
             </h1>
             <span className="text-4xl text-primary-600">
               Software Developer
@@ -56,7 +55,7 @@ export default function HeroSection() {
             label={"+10"}
             aux="Frameworks and tools used"
           />
-          <BentoLink label={"7"} href="#projects" aux="Projects shiped" />
+          <BentoLink label={"2"} href="#projects" aux="Projects MVP" />
           <BentoLink label={"0$"} href="#pricing" aux="To make a quote" />
         </div>
       </div>

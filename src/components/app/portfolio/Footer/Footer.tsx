@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="lg:w-[500px] w-full rounded-2xl py-7">
               <h1 className="text-2xl">
                 Niaina Franco{" "}
-                <strong className="text-secondary">ROBERTO</strong>
+                <strong className="text-secondary font-damion">ROBERTO</strong>
               </h1>
               <p className="text-4xl text-primary-900">Software Developer</p>
               <div className="mt-5 text-justify text-lg">

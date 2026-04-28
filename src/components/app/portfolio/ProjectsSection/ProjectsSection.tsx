@@ -43,6 +43,14 @@ export default function ProjectsSection(){
                   flag: "APK",
                   link: "https://github.com/hidden-machina/mindi-s-apk.git",
                 },
+                {
+                  flag: "API",
+                  link: "https://github.com/hidden-machina/mindi-s-backend.git",
+                },
+                {
+                  flag: "Front",
+                  link: "https://github.com/hidden-machina/mindi-s-dashboard-v2.git",
+                },
               ]}
             />
           </div>

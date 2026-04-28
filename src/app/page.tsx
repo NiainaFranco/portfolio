@@ -1,13 +1,11 @@
-import AchievementsSection from "@/components/app/portfolio/AchievementsSection/AchievementsSection";
 import Footer from "@/components/app/portfolio/Footer/Footer";
 import HeroSection from "@/components/app/portfolio/HeroSection/HeroSection";
-import { AboutMeSection } from "@/components/app/portfolio/LanguagesSection/AboutMeSection";
+import { AboutMeSection } from "@/components/app/portfolio/AboutMeSection/AboutMeSection";
 import { MobileTopBar } from "@/components/app/portfolio/Navigation/MobileTopBar";
 import TopBar from "@/components/app/portfolio/Navigation/TopBar";
 import { PricingSection } from "@/components/app/portfolio/PricingSection/PricingSection";
 import ProjectsSection from "@/components/app/portfolio/ProjectsSection/ProjectsSection";
 import { ServicesSection } from "@/components/app/portfolio/ServicesSection/ServicesSection";
-import { SectionSeparator } from "@/components/SectionSeparator";
 
 export default function Portfolio(){
     return (
