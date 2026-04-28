@@ -16,8 +16,8 @@ export default function Portfolio(){
         <div className="w-full text-primary-950">
             <div className="relative lg:w-full flex-col items-center w-full flex justify-center md:w-full">
               <HeroSection />
-              {/* <ServicesSection />
-              <LanguagesSection />
+              <ServicesSection />
+              {/* <LanguagesSection />
               <ProjectsSection />
               <PricingSection />
               <Footer /> */}

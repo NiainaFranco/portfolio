@@ -1,15 +1,18 @@
-"use client"
+"use client";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import { ServiceOffer } from "./ServiceOffer"
+import { ServiceOffer } from "./ServiceOffer";
 import { ReactNode } from "react";
 import { SectionSeparator } from "@/components/SectionSeparator";
 
 export function ServicesSection() {
   return (
-     <div id="services" className="w-full p-7 gap-7 flex flex-col items-center">
-      <div className="w-[var(--max-width)] px-7 rounded-3xl">
-      <SectionSeparator>My Services</SectionSeparator> 
-        <div className="w-full flex py-7 flex-col ">
+    <div
+      id="services"
+      className="w-full lg:p-7 py-7 gap-7 flex flex-col items-center"
+    >
+      <div className="lg:w-[var(--max-width)] w-full px-3 lg:px-7 rounded-3xl">
+        <SectionSeparator>My Services</SectionSeparator>
+        <div className="w-full flex py-7 flex-col gap-5">
           <ServiceOffer
             illustration="rocket-illustration"
             developement={
@@ -29,42 +32,33 @@ export function ServicesSection() {
               </p>
             }
           >
-            <div className="pt-5">
-              <AnchorButton>
-                Get started
-              </AnchorButton>
-            </div>
+            <AnchorButton>Get started</AnchorButton>
           </ServiceOffer>
           <div className="flex w-full justify-end">
-           <ServiceOffer
-            illustration="brick-illustration"
-            developement={
-              <>
-                <p>
-                  Use your idea paired with my experiences to create and
-                  automate a solution that can solve your problems and quickly
-                  scale.
+            <ServiceOffer
+              illustration="brick-illustration"
+              developement={
+                <>
+                  <p>
+                    Use your idea paired with my experiences to create and
+                    automate a solution that can solve your problems and quickly
+                    scale.
+                  </p>
+                </>
+              }
+              title={
+                <p className="text-primary-600">
+                  Build your digital solution with me{" "}
+                  <span className="text-secondary font-bold">
+                    brick by brick.{" "}
+                  </span>
                 </p>
-              </>
-            }
-            title={
-              <p className="text-primary-600">
-                Build your digital solution with me{" "}
-                <span className="text-secondary font-bold">
-                  brick by brick.{" "}
-                </span>
-              </p>
-            }
-          >
-            <div className="pt-5">
-              <AnchorButton>
-                Start Building
-              </AnchorButton>
-            </div>
-          </ServiceOffer>
-            
+              }
+            >
+              <AnchorButton>Start Building</AnchorButton>
+            </ServiceOffer>
           </div>
-         <ServiceOffer
+          <ServiceOffer
             illustration="collaboration-illustration"
             developement={
               <>
@@ -83,11 +77,7 @@ export function ServicesSection() {
               </p>
             }
           >
-            <div className="pt-5">
-              <AnchorButton>
-                Contact now
-              </AnchorButton>
-            </div>
+            <AnchorButton>Contact now</AnchorButton>
           </ServiceOffer>
         </div>
       </div>
@@ -95,12 +85,14 @@ export function ServicesSection() {
   );
 }
 
-function AnchorButton(props: {
-  href?:string
-  children?: ReactNode
-}){
-  const {href, children} = props
-  return(
-    <a href={href} className="rounded-xl w-[fit-content] bg-secondary px-3 block py-2 text-white">{children}</a>    
-  )
+function AnchorButton(props: { href?: string; children?: ReactNode }) {
+  const { href, children } = props;
+  return (
+    <a
+      href={href}
+      className="rounded-xl w-[fit-content] bg-secondary px-3 block py-2 text-white"
+    >
+      {children}
+    </a>
+  );
 }
