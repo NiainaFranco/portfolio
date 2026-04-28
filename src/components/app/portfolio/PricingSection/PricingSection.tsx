@@ -1,24 +1,24 @@
 import { SectionSeparator } from "@/components/SectionSeparator";
 import { PricingList } from "./PricingList";
+import { PricingListSeparator } from "./PricingListSeparator";
 
 export function PricingSection(){
     return (
       <section id="pricing" className="w-full flex justify-center">
         <div className="w-[var(--max-width)] p-7">
           <SectionSeparator>Pricing plan</SectionSeparator>
-          <div className="flex justify-center">
-            <div className="p-3 rounded-xl ">
-              <h1>Showcase website</h1>
+          <div className="flex justify-center gap-3 pt-4">
+            <div className="p-7 rounded-3xl border border-primary-500 shadow-lg bg-white w-[350px]">
+              <h1 className="text-3xl text-primary-600 w-full text-center">Showcase website</h1>
               <PricingList>
-                <span>Developement and evolution</span>
+                <PricingListSeparator>Developement</PricingListSeparator>
                 <ul>
-                  <li>50% upfront</li>
-                  <li>20% on last presentation</li>
-                  <li>Rest is due on production deployement</li>
+                  <li><strong className="text-secondary">50%</strong> upfront.</li>
+                  <li><strong className="text-secondary">50%</strong> on last presentation.</li>
                 </ul>
-                <span>Maintenance and Hosting</span>
+                <PricingListSeparator>Maintenances</PricingListSeparator>
                 <ul>
-                  <li>Starting from 50$/month</li>
+                  <li>Starting from <strong className="text-secondary">50$/month</strong></li>
                   <li>The deployement fee is charged on you.</li>
                   <li>
                     I will optimize your ressource usage based on the expected
@@ -27,19 +27,18 @@ export function PricingSection(){
                 </ul>
               </PricingList>
             </div>
-            <div className="p-3 rounded-xl ">
-              <h1>Web-application</h1>
+            <div className="p-7 rounded-3xl shadow-lg w-[350px]">
+            <h1 className="text-3xl text-primary-600 w-full text-center">Web-application</h1>
               <PricingList>
-                <span>developement and evolution</span>
+                <PricingListSeparator>Developement</PricingListSeparator>
                 <ul>
                   <li>Pricing isolated between each features.</li>
                   <li>
                     Each feature is created within a cycle of developement or{" "}
                     <strong className="text-secondary">run</strong>.
                   </li>
-                  <li>50% before the run</li>
-                  <li>20% on last presentation</li>
-                  <li>Rest is due on production deployement</li>
+                  <li><strong className="text-secondary">50%</strong> before a run.</li>
+                  <li><strong className="text-secondary">50%</strong> on on the deadline.</li>
                 </ul>
               </PricingList>
             </div>

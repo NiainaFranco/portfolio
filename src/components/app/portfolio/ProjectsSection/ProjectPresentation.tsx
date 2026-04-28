@@ -16,7 +16,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
   const { name, technos, image, description, sub, urls } = props;
 
   return (
-    <div className="w-full h-[fit-content] shadow-md flex gap-6 pt-8 p-7 border-4 rounded-2xl border-primary-400">
+    <div className="w-full h-[fit-content] shadow-md/20 bg-white flex gap-6 pt-8 p-7 rounded-2xl">
       {image && (
         <div className="py-3 rounded-3xl">
           <div className="aspect-3/2 w-[300px] h-[200px] overflow-hidden rounded-xl shadow-lg flex justify-center">
@@ -35,8 +35,8 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
       )}
       <div>
         <div>
-          <h1 className="text-2xl text-primary-600 font-bold">{name}</h1>
-          <h2 className="text-lg text-secondary">{sub}</h2>
+          <h1 className="text-3xl text-secondary font-bold">{name}</h1>
+          <h2 className="text-xl text-primary-600">{sub}</h2>
         </div>
         <div>
           <p className="pt-2 text-md text-justify">{description}</p>
@@ -50,7 +50,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
               return (
                 <div
                   key={"project-presentation-" + index + url.link}
-                  className="w-full h-[50px] flex border border-primary-500 rounded-xl overflow-hidden justify-center items-center"
+                  className="w-full h-[50px] flex border border-primary-600 rounded-xl overflow-hidden justify-center items-center"
                 >
                   <input
                     type="text"

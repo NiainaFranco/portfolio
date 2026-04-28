@@ -6,8 +6,9 @@ import { WhatsappIcon } from "@/components/DynamiqueIcons/WhatsappIcon";
 
 export default function Footer() {
   return (
-    <footer id="footer" className="w-full bg-primary-200 flex justify-center">
+    <footer id="contacts" className="w-full mt-[80px] flex justify-center">
       <div className="w-[var(--max-width)]">
+        
         <div className="p-7">
           <div className="flex justify-between gap-3">
             <div className="w-[500px] rounded-2xl py-7">

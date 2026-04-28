@@ -10,10 +10,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="scroll-smooth">
-        <Providers>
-          {children}
-        </Providers>
+      <body id="rootId" className="scroll-smooth">
+        {children}
       </body>
     </html>
   );

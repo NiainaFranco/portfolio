@@ -7,8 +7,8 @@ type ToolsListPropsType = {
 export function ToolsList(props: ToolsListPropsType){
     return(
     <div>
-        <h2 className="text-2xl py-2 text-primary-600 font-bold">{props.listName}</h2>
-        <ul className="list-disc px-3 text-lg text-black">
+        <h2 className="text-2xl pb-2 text-secondary font-bold">{props.listName}</h2>
+        <ul className="list-disc px-4 [&>li]:pb-2 text-md text-black">
         {
             props.toolsNames.map((toolName, index)=>{
                 return(

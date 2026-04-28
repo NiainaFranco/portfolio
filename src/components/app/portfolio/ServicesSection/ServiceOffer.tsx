@@ -8,7 +8,7 @@ export function ServiceOffer(props: {
 }){
     const {developement, children, illustration, title} = props
     return (
-      <div className={`w-[900px] items-center flex pl-[40px] p-7 border-l-12 border-primary-500 bg-[var(--background)] overflow-hidden relative`}>
+      <div className={`w-[900px] items-center flex pl-[40px] p-7 bg-[var(--background)] overflow-hidden relative`}>
         <div className="w-[200px] h-[200px] flex justify-center items-center p-2">
           <img
           height={200}

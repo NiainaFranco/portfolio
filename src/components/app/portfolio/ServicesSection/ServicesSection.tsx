@@ -9,7 +9,7 @@ export function ServicesSection() {
      <div id="services" className="w-full p-7 gap-7 flex flex-col items-center">
       <div className="w-[var(--max-width)] px-7 rounded-3xl">
       <SectionSeparator>My Services</SectionSeparator> 
-        <div className="w-full flex py-7 flex-col gap-[34px]">
+        <div className="w-full flex py-7 flex-col ">
           <ServiceOffer
             illustration="rocket-illustration"
             developement={
@@ -22,7 +22,7 @@ export function ServicesSection() {
               </>
             }
             title={
-              <p>
+              <p className="text-primary-600">
                 Create and{" "}
                 <span className="text-secondary font-bold">boost </span>
                 your online visibility
@@ -48,7 +48,7 @@ export function ServicesSection() {
               </>
             }
             title={
-              <p>
+              <p className="text-primary-600">
                 Build your digital solution with me{" "}
                 <span className="text-secondary font-bold">
                   brick by brick.{" "}
@@ -76,7 +76,7 @@ export function ServicesSection() {
               </>
             }
             title={
-              <p>
+              <p className="text-primary-600">
                 Let's{" "}
                 <span className="text-secondary font-bold">collaborate </span>
                 as professionals on your projects.

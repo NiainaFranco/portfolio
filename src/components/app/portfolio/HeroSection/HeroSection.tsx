@@ -6,24 +6,32 @@ import { GithubIcon } from "@/components/DynamiqueIcons/GithubIcon";
 import { LinkedInIcon } from "@/components/DynamiqueIcons/LinkedInIcon";
 import { MailIcon } from "@/components/DynamiqueIcons/MailIcon";
 import "./HeroSection.css"
+import { useWindowWidth } from "@react-hook/window-size";
 
 export default function HeroSection() {
   return (
     <div
       id="hero"
       className={`
-        p-7
-        w-[var(--max-width)] flex relative
+        lg:p-7
+        p-3
+
+        w-full
+        lg:w-[var(--max-width)] flex flex-col-reverse sm:flex-row lg:flex-row relative
         justify-between
         gap-7
       `}
     >
-      <div className="w-[550px] flex flex-col gap-3">
-        <div className="w-full h-[395px] rounded-3xl py-6">
-          <h1 className="text-6xl pb-3">
-            Niaina Franco <strong className="text-secondary">ROBERTO</strong>
-          </h1>
-          <span className="text-4xl text-gray-600">Software Developer</span>
+      <div className="lg:w-[550px] w-full flex flex-col gap-3">
+        <div className="w-full h-[fit-content] lg:h-[395px] rounded-3xl py-6">
+          <div className="hidden lg:block">
+            <h1 className="text-6xl pb-3">
+              Niaina Franco <strong className="text-secondary">ROBERTO</strong>
+            </h1>
+            <span className="text-4xl text-primary-600">
+              Software Developer
+            </span>
+          </div>
           <div className="text-lg text-justify">
             <p className="mt-4">
               I'm a Webpage designer, Software developer and IT consultant for
@@ -42,27 +50,32 @@ export default function HeroSection() {
             </p>
           </div>
         </div>
-        <div className="flex gap-3">
-          <BentoLink label={"+10"} aux="Frameworks and tools used" size={170} />
+        <div className="flex gap-3 justify-between [&>a]:lg:w-[170px] [&>a]:lg:h-[170px] [&>a]:w-[150px] [&>a]:h-[150px]">
           <BentoLink
-            label={"7"}
-            href="#projects"
-            aux="Projects shiped"
-            size={170}
+            href="#about-me"
+            label={"+10"}
+            aux="Frameworks and tools used"
           />
-          <BentoLink
-            label={"0$"}
-            href="#contacts"
-            aux="To make a quote"
-            size={170}
-          />
+          <BentoLink label={"7"} href="#projects" aux="Projects shiped" />
+          <BentoLink label={"0$"} href="#pricing" aux="To make a quote" />
         </div>
       </div>
       <div className="w-full flex gap-3 flex-col">
         <div className="w-full h-full overflow-y-hidden flex">
           <div className="h-full flex-1 relative rounded-tl-3xl rounded-b-3xl">
-            <div className="w-full flex justify-center h-full items-center">
-              <div className="presentation-image-custom-shape w-[570px] h-[570px] bg-primary-500  border-primary-500 z-10 relative">
+            <div className="w-full flex flex-col gap-5 lg:flex-row items-center justify-center h-full items-center">
+              <div className="block w-full lg:hidden">
+                <h1 className="text-2xl w-full text-center">
+                  Niaina Franco{" "}
+                  <strong className="text-center text-secondary">
+                    ROBERTO
+                  </strong>
+                </h1>
+                <p className="text-xl text-center w-full text-primary-600">
+                  Software Developer
+                </p>
+              </div>
+              <div className="presentation-image-custom-shape w-[250px] h-[250px] sm:w-[570px] sm:h-[570px] bg-primary-500 border-primary-500 z-10 relative">
                 <Image
                   height={900}
                   className="drop-shadow-lg/60 aspect-square w-full h-full"
@@ -72,28 +85,6 @@ export default function HeroSection() {
                 />
               </div>
             </div>
-            {/* <div className="px-3 absolute top-0 right-0 pt-3 flex-col items-center flex gap-3 bg-[var(--background)]">
-              <ContactBentoLink
-                href="https://www.linkedin.com/in/franco-roberto-657241276/"
-                size={80}
-                icon={
-                  <LinkedInIcon className="group-hover:fill-primary-500 fill-white" />
-                }
-              />
-              <ContactBentoLink
-                href="https://github.com/NiainaFranco/"
-                size={80}
-                icon={
-                  <GithubIcon className="group-hover:fill-primary-500 fill-white" />
-                }
-              />
-              <ContactBentoLink
-                icon={
-                  <MailIcon className="group-hover:fill-primary-500 fill-white" />
-                }
-                size={80}
-              />
-            </div> */}
           </div>
         </div>
       </div>
