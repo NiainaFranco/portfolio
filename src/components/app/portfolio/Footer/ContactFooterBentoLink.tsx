@@ -10,7 +10,7 @@ export function ContactFooterBentoLink(props: {
   return (
     <a
       href={href}
-      className="shadow-sm flex gap-1 items-center text-white hover:text-primary-600 hover:shadow-md group hover:bg-[var(--background)] duration-[300ms] bg-primary-600 rounded-xl p-2 "
+      className="shadow-sm flex gap-1 items-center text-white hover:text-primary-500 hover:shadow-md group hover:bg-[var(--background)] duration-[300ms] bg-primary-500 rounded-xl p-2 "
     >
       <div
         style={{

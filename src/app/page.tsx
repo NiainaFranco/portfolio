@@ -22,7 +22,7 @@ export default function Portfolio(){
               <AboutMeSection />
               <ProjectsSection />
               <PricingSection />
-              {/* <Footer /> */}
+              <Footer />
             </div>
         </div>
       </div>

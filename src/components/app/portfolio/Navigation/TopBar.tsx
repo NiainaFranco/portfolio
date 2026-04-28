@@ -40,7 +40,7 @@ export default function TopBar() {
             [&>a]:hover:bg-primary-400
             [&>a]:duration-[500ms]
             [&>a]:p-2 
-            text-black
+            text-white
             md:justify-end
             lg:justify-end
           `}

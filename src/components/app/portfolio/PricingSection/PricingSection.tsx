@@ -7,7 +7,7 @@ export function PricingSection(){
       <section id="pricing" className="w-full flex justify-center">
         <div className="lg:w-[var(--max-width)] w-full p-3 lg:p-7">
           <SectionSeparator>Pricing plan</SectionSeparator>
-          <div className="lg:flex-row flex flex-col justify-center gap-3 pt-4">
+          <div className="lg:flex-row flex flex-col justify-center gap-3 pt-7">
             <div className="p-7 rounded-3xl border-4 border-primary-500 shadow-lg bg-white w-full lg:w-[350px]">
               <h1 className="text-3xl text-primary-600 w-full text-center">Showcase website</h1>
               <PricingList>
