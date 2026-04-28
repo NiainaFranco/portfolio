@@ -3,7 +3,6 @@
 :root {
   --background: rgb(252, 245, 230);
   --foreground: #0d0d0d;
-  --breakpoint-mb: 300px;
   --max-width: 1280px
 }
 

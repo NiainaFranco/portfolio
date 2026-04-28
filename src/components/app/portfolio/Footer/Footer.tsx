@@ -3,12 +3,14 @@ import { ContactFooterBentoLink } from "./ContactFooterBentoLink";
 import { GithubIcon } from "@/components/DynamiqueIcons/GithubIcon";
 import { MailIcon } from "@/components/DynamiqueIcons/MailIcon";
 import { WhatsappIcon } from "@/components/DynamiqueIcons/WhatsappIcon";
+import { SectionSeparator } from "@/components/SectionSeparator";
 
 export default function Footer() {
   return (
     <footer id="contacts" className="w-full mt-[80px] flex justify-center">
       <div className="lg:w-[var(--max-width)] w-full">
         <div className="lg:p-7 p-3">
+        <SectionSeparator>Contacts</SectionSeparator>
           <div className="flex justify-between gap-3">
             <div className="lg:w-[500px] w-full rounded-2xl py-7">
               <h1 className="text-2xl">
