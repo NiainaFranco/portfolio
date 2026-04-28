@@ -21,8 +21,8 @@ export default function Portfolio(){
               <ServicesSection />
               <AboutMeSection />
               <ProjectsSection />
-              {/* <PricingSection />
-              <Footer /> */}
+              <PricingSection />
+              {/* <Footer /> */}
             </div>
         </div>
       </div>
