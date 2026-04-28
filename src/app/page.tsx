@@ -1,7 +1,7 @@
 import AchievementsSection from "@/components/app/portfolio/AchievementsSection/AchievementsSection";
 import Footer from "@/components/app/portfolio/Footer/Footer";
 import HeroSection from "@/components/app/portfolio/HeroSection/HeroSection";
-import { LanguagesSection } from "@/components/app/portfolio/LanguagesSection/LanguagesSection";
+import { AboutMeSection } from "@/components/app/portfolio/LanguagesSection/AboutMeSection";
 import TopBar from "@/components/app/portfolio/Navigation/TopBar";
 import { PricingSection } from "@/components/app/portfolio/PricingSection/PricingSection";
 import ProjectsSection from "@/components/app/portfolio/ProjectsSection/ProjectsSection";
@@ -17,8 +17,8 @@ export default function Portfolio(){
             <div className="relative lg:w-full flex-col items-center w-full flex justify-center md:w-full">
               <HeroSection />
               <ServicesSection />
-              {/* <LanguagesSection />
-              <ProjectsSection />
+              <AboutMeSection />
+              {/* <ProjectsSection />
               <PricingSection />
               <Footer /> */}
             </div>
