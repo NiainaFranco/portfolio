@@ -4,7 +4,7 @@ import { ProjectPresentation } from "./ProjectPresentation";
 export default function ProjectsSection(){
     return (
       <div id="projects" className="w-full flex flex-col items-center">
-        <div className="w-[var(--max-width)] p-7">
+        <div className="lg:w-[var(--max-width)] lg:p-7 p-3 w-full">
           <SectionSeparator>Projects</SectionSeparator>
           <div className="w-full py-7 flex justify-start flex-col gap-5">
             <ProjectPresentation

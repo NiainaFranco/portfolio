@@ -1,3 +1,5 @@
+"use client"
+
 import { useDocumentRootRef } from "@/hooks/useOverlayRef"
 import { ReactNode, useEffect } from "react"
 import { createPortal } from "react-dom"

@@ -1,4 +1,6 @@
+import { CopyIcon } from "@/components/DynamiqueIcons/CopyIcon";
 import Image from "next/image";
+import { ProjectPresentationSourceCodeLink } from "./ProjectPresentationSourceCodeLink";
 
 export type ProjectPresentationPropsType = {
   name: string;
@@ -14,9 +16,8 @@ export type ProjectPresentationPropsType = {
 
 export function ProjectPresentation(props: ProjectPresentationPropsType) {
   const { name, technos, image, description, sub, urls } = props;
-
   return (
-    <div className="w-full h-[fit-content] shadow-md/20 bg-white flex gap-6 pt-8 p-7 rounded-2xl">
+    <div className="w-full h-[fit-content] lg:flex-row flex-col shadow-md/20 bg-white flex gap-6 pt-8 p-7 p-3 rounded-2xl">
       {image && (
         <div className="py-3 rounded-3xl">
           <div className="aspect-3/2 w-[300px] h-[200px] overflow-hidden rounded-xl shadow-lg flex justify-center">
@@ -35,42 +36,19 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
       )}
       <div>
         <div>
-          <h1 className="text-3xl text-secondary font-bold">{name}</h1>
-          <h2 className="text-xl text-primary-600">{sub}</h2>
+          <h1 className="lg:text-3xl text-xl text-primary-600 font-bold">{name}</h1>
+          <h2 className="lg:text-xl text-lg text-secondary">{sub}</h2>
         </div>
         <div>
-          <p className="pt-2 text-md text-justify">{description}</p>
+          <p className="pt-2 text-sm lg:text-lg text-justify">{description}</p>
         </div>
         <div className="flex flex-col">
           <div className="overflow-hidden pt-3 w-full relative">
             <TehcnoLister languages={technos} />
           </div>
-          <div className="text-gray-800 pt-5 flex flex-col gap-3">
+          <div className="text-gray-800 pt-5 flex flex-wrap gap-3">
             {urls?.map((url, index) => {
-              return (
-                <div
-                  key={"project-presentation-" + index + url.link}
-                  className="w-full h-[50px] flex border border-primary-600 rounded-xl overflow-hidden justify-center items-center"
-                >
-                  <input
-                    type="text"
-                    className="w-full px-3 h-full"
-                    readOnly
-                    value={url.link}
-                  />
-                  <a
-                    className="py-3 w-[fit-content] pl-2 pr-5 pl-1 flex gap-2 items-center text-white shadow-md bg-primary-600 rounded-r-xl"
-                    href={url.link}
-                  >
-                    <img
-                      className="w-[40px] h-[40px]"
-                      src="/icons/github.svg"
-                      alt="github icon"
-                    />
-                    <p className="pr-3 font-bold text-white">{url.flag}</p>
-                  </a>
-                </div>
-              );
+              return <ProjectPresentationSourceCodeLink url={url} key={"project-presentation-source-code" + url.flag + index} />
             })}
           </div>
         </div>
@@ -79,13 +57,17 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
   );
 }
 
+
 function TehcnoLister(props: { languages: string[] }) {
   const { languages } = props;
   return (
     <div className="w-full flex flex-wrap gap-2">
       {languages.map((language, index) => {
         return (
-          <span key={language + index} className="p-2 bg-primary-200">
+          <span
+            key={language + index}
+            className="p-2 lg:text-lg text-sm bg-primary-200"
+          >
             {language}
           </span>
         );
