@@ -1,13 +1,10 @@
-"use client"
-
+import { NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
-import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function Providers(props: {children: ReactNode}){
     return (
-        <ParallaxProvider>
+        <NextIntlClientProvider>
             {props.children}
-        </ParallaxProvider>
-
+        </NextIntlClientProvider>
     )
 }
