@@ -1,5 +1,20 @@
 {
    "HeroSection": {
-      "jobName": "Software Developer" 
+      "jobName": "Software Developer",
+      "text": {
+         "text1": "I'm a Webpage designer, Software developer and IT consultant for production level Web-applications optimization",
+         "text2":  "I develop",
+         "text3": "Web-applications",
+         "text4": "create",
+         "text5": "Websites",
+         "text6": "and",
+         "text7": "optimize",
+         "text8": "your production system based on your target number of clients, and budgets"
+      },
+      "bentoLink": {
+         "frameworks": "Frameworks and tools used",
+         "projects": "Projects MVP",
+         "quote": "To make a quote"
+      }
    }
 }

@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
   const t = useTranslations("HeroSection");
+  const heroText = useTranslations("HeroSection.text");
+  const heroBentoLink = useTranslations("HeroSection.bentoLink")
   return (
     <div
       id="hero"
@@ -26,20 +28,15 @@ export default function HeroSection() {
             <span className="text-4xl text-primary-600">{t("jobName")}</span>
           </div>
           <div className="text-lg text-justify">
+            <p className="mt-4">{heroText("text1")}</p>
             <p className="mt-4">
-              I'm a Webpage designer, Software developer and IT consultant for
-              production level Web-applications optimization.
-            </p>
-            <p className="mt-4">
-              I develop{" "}
-              <strong className="text-secondary">Web-applications</strong>,
-              create visual interfaces for{" "}
-              <strong className="text-secondary">Showcase Website</strong>, and
-              optimize your production system based on your{" "}
-              <strong className="text-secondary">
-                target number of clients
-              </strong>
-              , and <strong className="text-secondary">budgets</strong>.
+              {heroText("text2")}{" "}
+              <strong className="text-secondary">{heroText("text3")}</strong>, {" "}
+              {heroText("text4")}{" "}
+              <strong className="text-secondary">{heroText("text5")}</strong>,{" "}
+              {heroText("text6")}
+              <strong className="text-secondary"> {heroText("text7")} </strong>
+              {heroText("text8")}
             </p>
           </div>
         </div>
@@ -47,10 +44,10 @@ export default function HeroSection() {
           <BentoLink
             href="#about-me"
             label={"+10"}
-            aux="Frameworks and tools used"
+            aux={heroBentoLink("frameworks")}
           />
-          <BentoLink label={"2"} href="#projects" aux="Projects MVP" />
-          <BentoLink label={"0$"} href="#pricing" aux="To make a quote" />
+          <BentoLink label={"2"} href="#projects" aux={heroBentoLink("projects")} />
+          <BentoLink label={"0$"} href="#pricing" aux={heroBentoLink("quote")} />
         </div>
       </div>
       <div className="w-full flex gap-3 flex-col">

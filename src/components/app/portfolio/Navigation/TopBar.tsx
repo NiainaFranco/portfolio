@@ -92,7 +92,7 @@ export default function TopBar() {
           <div className="h-full flex items-center">
             <label htmlFor="changeLanguageSwitch" className={`${locale === "en" ? "justify-start" : "justify-end"} w-[60px] block p-1 rounded-full bg-primary-100 flex`}>
               <input id="changeLanguageSwitch" disabled={changeClicked} onChange={changeLanguage} type="checkbox" hidden />
-              <span className="flex justify-center items-center bg-primary-400 text-sm rounded-full w-[30px] h-[30px] text-center text-white">
+              <span className="flex justify-center items-center bg-primary-400 shadow-lg/10 text-sm rounded-full w-[30px] h-[30px] text-center text-white">
                 <strong>
                   {locale}
                 </strong>
