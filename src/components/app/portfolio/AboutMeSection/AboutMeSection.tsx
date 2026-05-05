@@ -18,13 +18,13 @@ export function AboutMeSection() {
   const deployementPlatform = ["AWS", "Vercel"];
 
   return (
-    <section id="about-me" className="lg:w-[var(--max-width)] w-full p-3 lg:p-7">
+    <section id="about-me" className="lg:max-w-[var(--max-width)] w-[var(--max-width)] w-full p-3 lg:p-7">
       <div>
         <SectionSeparator>{tnavigation("aboutMe")}</SectionSeparator>
       </div>
       <div className="flex w-full py-7 gap-7 justify-start">
           <img
-            className="w-[500px] hidden lg:block h-[500px] rounded-3xl"
+            className="w-[500px] md:w-[300px] md:h-[300px] hidden md:block lg:block h-[500px] rounded-3xl"
             src={"/images/language-presentation-image.jpg"}
           />
         <div className="flex-1 relative flex flex-col gap-8 lg:p-3">
@@ -32,15 +32,15 @@ export function AboutMeSection() {
             <h2 className="lg:text-3xl text-xl text-primary-600 lg:mb-3">
               {t.rich("title1", highlight())}
             </h2>
-            <div className="w-full">
-              <div className="lg:p-3 w-full h-full block lg:hidden">
+            <div className="w-full sm:flex sm:flex-col sm:items-center">
+              <div className="lg:p-3 sm:w-[400px] sm:h-[400px] w-full h-full block md:hidden lg:hidden">
                 <img
                   className="w-full h-full rounded-3xl"
                   src={"/images/language-presentation-image.jpg"}
                 />
               </div>
               <p className="text-justify mt-3 text-md lg:text-lg">
-              {t.rich("text", highlight())}
+                {t.rich("text", highlight())}
               </p>
             </div>
           </div>

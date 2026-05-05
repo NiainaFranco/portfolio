@@ -52,9 +52,9 @@ export default function TopBar() {
     <nav
       className={`${
         show ? "top-[15px]" : "top-[-200px]"
-      } duration-[300ms] sticky z-40 w-full hidden lg:flex justify-center top-3`}
+      } duration-[300ms] sticky z-40 w-full hidden md:flex lg:flex justify-center top-3`}
     >
-      <div className="px-7 w-[var(--max-width)] max-w-[var(--max-width)]">
+      <div className="px-7 max-w-[var(--max-width)] w-[var(--max-width)] max-w-[var(--max-width)] w-[var(--max-width)]">
         <div
           className={`
             shadow-sm pl-3 p-1 backdrop-blur-sm flex flex-row font-semibold w-full bg-primary-500 rounded-2xl

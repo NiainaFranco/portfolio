@@ -12,9 +12,9 @@ export function ServicesSection() {
   return (
     <div
       id="services"
-      className="w-full lg:p-7 py-7 gap-7 flex flex-col items-center"
+      className="w-full py-7 gap-7 flex flex-col items-center"
     >
-      <div className="lg:w-[var(--max-width)] w-full px-3 lg:px-7 rounded-3xl">
+      <div className="lg:max-w-[var(--max-width)] w-[var(--max-width)] w-full px-3 lg:px-7 rounded-3xl">
         <SectionSeparator>{tnavigation("services")}</SectionSeparator>
         <div className="w-full flex py-7 flex-col gap-5">
           <ServiceOffer

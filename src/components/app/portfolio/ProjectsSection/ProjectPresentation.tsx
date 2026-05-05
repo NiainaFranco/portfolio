@@ -17,7 +17,7 @@ export type ProjectPresentationPropsType = {
 export function ProjectPresentation(props: ProjectPresentationPropsType) {
   const { name, technos, image, description, sub, urls } = props;
   return (
-    <div className="w-full h-[fit-content] lg:flex-row flex-col shadow-md/20 bg-white flex gap-6 pt-8 p-7 p-3 rounded-2xl">
+    <div className="w-full h-[fit-content] md:flex-row sm:flex-row lg:flex-row flex-col shadow-md/20 bg-white flex gap-6 pt-8 p-7 p-3 rounded-2xl">
       {image && (
         <div className="py-3 rounded-3xl">
           <div className="aspect-3/2 w-[300px] h-[200px] overflow-hidden rounded-xl shadow-lg flex justify-center">

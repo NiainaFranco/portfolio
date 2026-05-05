@@ -12,9 +12,10 @@ export default function HeroSection() {
       id="hero"
       className={`
         lg:p-7
+        md:pt-7
         p-3
         w-full
-        lg:w-[var(--max-width)] flex flex-col-reverse sm:flex-row lg:flex-row relative
+        lg:max-w-[var(--max-width)] w-[var(--max-width)] flex flex-col-reverse lg:flex-row relative
         justify-between
         gap-7
       `}

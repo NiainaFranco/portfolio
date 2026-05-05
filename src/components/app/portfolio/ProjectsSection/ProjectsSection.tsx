@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   const tnavigation = useTranslations("Navigation");
   return (
     <div id="projects" className="w-full flex flex-col items-center">
-      <div className="lg:w-[var(--max-width)] lg:p-7 p-3 w-full">
+      <div className="lg:max-w-[var(--max-width)] w-[var(--max-width)] lg:p-7 p-3 w-full">
         <SectionSeparator>{tnavigation("projects")}</SectionSeparator>
         <div className="w-full py-7 flex justify-start flex-col gap-5">
           <ProjectPresentation

@@ -12,7 +12,7 @@ export default function Footer() {
   const tnavigation = useTranslations("Navigation")
   return (
     <footer id="contacts" className="w-full mt-[80px] flex justify-center">
-      <div className="lg:w-[var(--max-width)] w-full">
+      <div className="lg:max-w-[var(--max-width)] w-[var(--max-width)] w-full">
         <div className="lg:p-7 p-3">
         <SectionSeparator>{tnavigation("contacts")}</SectionSeparator>
           <div className="flex justify-between gap-3">
