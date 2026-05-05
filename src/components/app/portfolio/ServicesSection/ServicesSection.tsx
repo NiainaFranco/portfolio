@@ -1,83 +1,68 @@
-"use client";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { ServiceOffer } from "./ServiceOffer";
 import { ReactNode } from "react";
 import { SectionSeparator } from "@/components/SectionSeparator";
+import { useTranslations } from "next-intl";
+import { highlight } from "@/components/Highlight";
 
 export function ServicesSection() {
+  const tboost = useTranslations("ServicesSection.boost");
+  const tbuild = useTranslations("ServicesSection.build");
+  const tcollaborate = useTranslations("ServicesSection.collaborate");
+  const tnavigation = useTranslations("Navigation");
   return (
     <div
       id="services"
       className="w-full lg:p-7 py-7 gap-7 flex flex-col items-center"
     >
       <div className="lg:w-[var(--max-width)] w-full px-3 lg:px-7 rounded-3xl">
-        <SectionSeparator>My Services</SectionSeparator>
+        <SectionSeparator>{tnavigation("services")}</SectionSeparator>
         <div className="w-full flex py-7 flex-col gap-5">
           <ServiceOffer
             illustration="rocket-illustration"
             developement={
               <>
-                <p>
-                  Let's make your business accessible for clients and potentiel
-                  parteners with a strong, clear, professional and beautifull
-                  website.
-                </p>
+                <p>{tboost("text")}</p>
               </>
             }
             title={
               <p className="text-primary-600">
-                Create and{" "}
-                <span className="text-secondary font-bold">boost </span>
-                your online visibility
+                {tboost.rich("title", highlight())}
               </p>
             }
           >
-            <AnchorButton>Get started</AnchorButton>
+            <AnchorButton>{tboost("cta")}</AnchorButton>
           </ServiceOffer>
           <div className="flex w-full justify-end">
             <ServiceOffer
               illustration="brick-illustration"
               developement={
                 <>
-                  <p>
-                    Use your idea paired with my experiences to create and
-                    automate a solution that can solve your problems and quickly
-                    scale.
-                  </p>
+                  <p>{tbuild("text")}</p>
                 </>
               }
               title={
                 <p className="text-primary-600">
-                  Build your digital solution with me{" "}
-                  <span className="text-secondary font-bold">
-                    brick by brick.{" "}
-                  </span>
+                  {tbuild.rich("title", highlight())}
                 </p>
               }
             >
-              <AnchorButton>Start Building</AnchorButton>
+              <AnchorButton>{tbuild("cta")}</AnchorButton>
             </ServiceOffer>
           </div>
           <ServiceOffer
             illustration="collaboration-illustration"
             developement={
               <>
-                <p>
-                  I help you wrap up, bugfix and optimize your projects when you
-                  just don't have enough time or when you really want to hit the
-                  gas and clear your projects schedule.
-                </p>
+                <p>{tcollaborate("text")}</p>
               </>
             }
             title={
               <p className="text-primary-600">
-                Let's{" "}
-                <span className="text-secondary font-bold">collaborate </span>
-                as professionals on your projects.
+                {tcollaborate.rich("title", highlight())}
               </p>
             }
           >
-            <AnchorButton>Contact now</AnchorButton>
+            <AnchorButton>{tcollaborate("cta")}</AnchorButton>
           </ServiceOffer>
         </div>
       </div>

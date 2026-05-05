@@ -1,5 +1,6 @@
-"use client";
+"use client"
 
+import { useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -11,6 +12,7 @@ export default function TopBar() {
   const urlLocale = useParams().locale?.toString() as "fr" | "en"
   const [locale, setLocale] = useState<"fr" | "en">(urlLocale)
   const [changeClicked, setChangeClicked] = useState(false);
+  const t = useTranslations("Navigation");
 
   useEffect(() => {
     window.addEventListener("scrollend", (e) => {
@@ -71,31 +73,40 @@ export default function TopBar() {
             `}
           >
             <a className="w-[fit-content] relative block" href="#hero">
-              Home
+              {t("home")}
             </a>
             <a className="w-[fit-content] relative block" href="#services">
-              Services
+              {t("services")}
             </a>
             <a className="w-[fit-content] relative block" href="#about-me">
-              About Me
+              {t("aboutMe")}
             </a>
             <a className="w-[fit-content] relative block" href="#projects">
-              Projets
+              {t("projects")}
             </a>
             <a className="w-[fit-content] relative block" href="#pricing">
-              Pricing
+              {t("pricing")}
             </a>
             <a className="w-[fit-content] relative block" href="#contacts">
-              Contacts
+              {t("contacts")}
             </a>
           </div>
           <div className="h-full flex items-center">
-            <label htmlFor="changeLanguageSwitch" className={`${locale === "en" ? "justify-start" : "justify-end"} w-[60px] block p-1 rounded-full bg-primary-100 flex`}>
-              <input id="changeLanguageSwitch" disabled={changeClicked} onChange={changeLanguage} type="checkbox" hidden />
+            <label
+              htmlFor="changeLanguageSwitch"
+              className={`${
+                locale === "en" ? "justify-start" : "justify-end"
+              } w-[60px] block p-1 rounded-full bg-primary-100 flex`}
+            >
+              <input
+                id="changeLanguageSwitch"
+                disabled={changeClicked}
+                onChange={changeLanguage}
+                type="checkbox"
+                hidden
+              />
               <span className="flex justify-center items-center bg-primary-400 shadow-lg/10 text-sm rounded-full w-[30px] h-[30px] text-center text-white">
-                <strong>
-                  {locale}
-                </strong>
+                <strong>{locale}</strong>
               </span>
             </label>
           </div>

@@ -1,7 +1,11 @@
 import { SectionSeparator } from "@/components/SectionSeparator";
 import { ToolsList } from "./ToolsList";
+import { useTranslations } from "next-intl";
+import { highlight } from "@/components/Highlight";
 
 export function AboutMeSection() {
+  const t = useTranslations("AboutMeSection");
+  const tnavigation = useTranslations("Navigation")
   const frontend = ["ReactJS", "NextJS", "Angular", "Tailwindcss"];
   const backend = [
     "Node",
@@ -12,10 +16,11 @@ export function AboutMeSection() {
   ];
   const database = ["PostgreSQL", "Sqlite", "MySQL"];
   const deployementPlatform = ["AWS", "Vercel"];
+
   return (
     <section id="about-me" className="lg:w-[var(--max-width)] w-full p-3 lg:p-7">
       <div>
-        <SectionSeparator>About Me</SectionSeparator>
+        <SectionSeparator>{tnavigation("aboutMe")}</SectionSeparator>
       </div>
       <div className="flex w-full py-7 gap-7 justify-start">
           <img
@@ -25,8 +30,7 @@ export function AboutMeSection() {
         <div className="flex-1 relative flex flex-col gap-8 lg:p-3">
           <div className="w-full">
             <h2 className="lg:text-3xl text-xl text-primary-600 lg:mb-3">
-              I'm a{" "}
-              <strong className="text-secondary">Javascript Developer</strong>.
+              {t.rich("title1", highlight())}
             </h2>
             <div className="w-full">
               <div className="lg:p-3 w-full h-full block lg:hidden">
@@ -36,19 +40,13 @@ export function AboutMeSection() {
                 />
               </div>
               <p className="text-justify mt-3 text-md lg:text-lg">
-                I'm a{" "}
-                software developer{" "}
-                experienced with <strong className="text-secondary">web developement</strong>. As such, my bread and butter is
-                the Javascript{" "}
-                language which is running on all modern browser and his vast
-                ecosystem of library, frameworks and packages.
+              {t.rich("text", highlight())}
               </p>
             </div>
           </div>
           <div>
             <h2 className="lg:text-3xl text-xl text-primary-600 mb-4 w-full">
-              Platforms and{" "}
-              Tools I use.
+              {t("title2")}
             </h2>
             <div className="flex flex-wrap justify-start gap-3 [&>div]:flex-1">
               <div>

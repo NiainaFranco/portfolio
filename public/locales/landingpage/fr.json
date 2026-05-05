@@ -1,20 +1,76 @@
 {
+   "Navigation": {
+      "home": "Home",
+      "services": "Mes Services",
+      "aboutMe": "À propos de moi",
+      "projects": "Mes Projets",
+      "pricing": "Plan de prix",
+      "contacts": "Contacts"
+   },
    "HeroSection": {
       "jobName": "Software Developer",
-      "text": {
-         "text1": "I'm a Webpage designer, Software developer and IT consultant for production level Web-applications optimization",
-         "text2":  "I develop",
-         "text3": "Web-applications",
-         "text4": "create",
-         "text5": "Websites",
-         "text6": "and",
-         "text7": "optimize",
-         "text8": "your production system based on your target number of clients, and budgets"
-      },
+      "text1": "Je suis concepteur de page Web, développeur de logiciels et consultant informatique pour l'optimisation des applications Web de niveau de production.",
+      "text2": "Je développe des <highlight>Applications Web</highlight>, <highlight>Sites web</highlight>, et <highlight>optimize</highlight> votre système de production en fonction de votre nombre cible de clients et de budgets.",
       "bentoLink": {
-         "frameworks": "Frameworks and tools used",
-         "projects": "Projects MVP",
-         "quote": "To make a quote"
+         "frameworks": "Framework et outils utilisés",
+         "projects": "Projets MVP",
+         "quote": "Pour un devis"
       }
+   },
+   "ServicesSection": {
+      "boost": {
+         "title": "Créez et <highlight>boostez</highlight> votre visibilité en ligne",
+         "text": "Rendons votre entreprise accessible aux clients et aux partenaires potentiel avec un Site Web solide, clair et professionnel.",
+         "cta": "Faire un devis"
+      },
+      "build": {
+         "title": "Construisez votre solution numérique avec moi <highlight>brique par brique</highlight>.",
+         "text": "Utilisez vos idées associée à mes expériences pour créer une solution automatiser, scalable, et capable de résoudre vos problèmes.",
+         "cta": "Faire un devis"
+      },
+      "collaborate": {
+         "title": "<highlight>Collaborons</highlight> en tant que professionnels sur vos projets.",
+         "text": "Je vous aide à finir, à bugfix et à optimiser vos projets lorsque vous n'avez tout simplement pas assez de temps et de collaborateurs pour les finirs.",
+         "cta": "Contacter maintenant"
+      }
+   },
+   "AboutMeSection": {
+      "title1": "Je suis un <highlight>développeur Javascript</highlight>.",
+      "text": "Je suis un développeur expérimenté dans le développement web. En tant que tel, le language que j'utilse le plus est Javascript qui fonctionne sur tous les navigateurs modernes et son vaste écosystème de bibliothèque et de frameworks.",
+      "title2": "Plateformes et outils que j’utilise."
+   },
+   "ProjectsSection": {
+      "project1": "Application de messagerie basée sur un canal en temps réel utilisant un serveur WebSocket associé à une API Laravel Backend et une interface utilisateur React JS.",
+      "project2": "Application de gestion du E-commerce pour les produits Macramer, avec un interface de tableau de bord d'administration pour gérer ce que les clients peuvent voir dans l'interface de présentation, et l'interface de présentation indiquée fait pour que les clients puissent parcourir et commander le catalogue de produits."
+   },
+   "PricingSection": {
+      "website": {
+         "title": "Site web",
+         "developement": {
+            "title": "Developement",
+            "line1": "<highlight>50%</highlight> à l'avance.",
+            "line2": "<highlight>50%</highlight> à la livraison."
+         },
+         "maintenance": {
+            "title": "Maintenances",
+            "line1": "À partir de <highlight>50$/mois</highlight>.",
+            "line2": "J'optimise votre utilisation des ressources en fonction du trafic attendu."
+         }
+      },
+      "webApp": {
+         "title": "Application web",
+         "developement": {
+            "title": "Developement",
+            "line1": "Prix isolé entre chaque fonctionnalités.",
+            "line2": "Chaque fonctionnalité est créée dans un cycle de développement",
+            "line3": "<highlight>50%</highlight> avant un cycle de développement.",
+            "line4": "<highlight>50%</highlight> à la livraison."
+         }
+      }
+   },
+   "ContactsSection": {
+      "title": "Software Developer",
+      "text1": "Je développe des <highlight>Applications Web</highlight>, <highlight>Sites web</highlight>, et <highlight>optimize</highlight> votre système de production en fonction de votre nombre cible de clients et de budgets.",
+      "text2": "Je suis impatient de travailler avec vous, contactez-moi en utilisant les informations ci-dessous."
    }
 }

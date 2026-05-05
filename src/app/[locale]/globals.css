@@ -17,11 +17,11 @@
   src: url("/font/talero/talero.otf") format("opentype");
 } */
 
-@font-face {
+/* @font-face {
   font-family: damion;
   font-style: normal;
   src: url("/font/damion/Damion-Regular.ttf") format("woff2");
-}
+} */
 
 /* @font-face {
   font-family: oxygen-bold;
@@ -42,11 +42,7 @@
 }
 
 @theme {
-  --font-outlined: "outlined", sans-serif;
   --font-standard: "standard", sans-serif;
-  --font-damion: "damion", sans-serif;
-  --font-oxygen-bold: oxygen-bold, sans-serif;
-  --font-talero: "talero", sans-serif;
   --color-black:#0d0d0d;
   --color-secondary: #F14D3B;
   --color-primary-50: #FDF4E7;

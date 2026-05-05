@@ -2,10 +2,10 @@ import { BentoLink } from "./BentoLink";
 import Image from "next/image";
 import "./HeroSection.css";
 import { useTranslations } from "next-intl";
+import { highlight } from "@/components/Highlight";
 
 export default function HeroSection() {
   const t = useTranslations("HeroSection");
-  const heroText = useTranslations("HeroSection.text");
   const heroBentoLink = useTranslations("HeroSection.bentoLink")
   return (
     <div
@@ -28,16 +28,8 @@ export default function HeroSection() {
             <span className="text-4xl text-primary-600">{t("jobName")}</span>
           </div>
           <div className="text-lg text-justify">
-            <p className="mt-4">{heroText("text1")}</p>
-            <p className="mt-4">
-              {heroText("text2")}{" "}
-              <strong className="text-secondary">{heroText("text3")}</strong>, {" "}
-              {heroText("text4")}{" "}
-              <strong className="text-secondary">{heroText("text5")}</strong>,{" "}
-              {heroText("text6")}
-              <strong className="text-secondary"> {heroText("text7")} </strong>
-              {heroText("text8")}
-            </p>
+            <p className="mt-4">{t("text1")}</p>
+            <p className="mt-4">{t.rich("text2", highlight())}</p>
           </div>
         </div>
         <div className="flex gap-3 justify-between [&>a]:lg:w-[170px] [&>a]:lg:h-[170px] [&>a]:w-[150px] [&>a]:h-[150px]">
@@ -46,8 +38,16 @@ export default function HeroSection() {
             label={"+10"}
             aux={heroBentoLink("frameworks")}
           />
-          <BentoLink label={"2"} href="#projects" aux={heroBentoLink("projects")} />
-          <BentoLink label={"0$"} href="#pricing" aux={heroBentoLink("quote")} />
+          <BentoLink
+            label={"2"}
+            href="#projects"
+            aux={heroBentoLink("projects")}
+          />
+          <BentoLink
+            label={"0$"}
+            href="#pricing"
+            aux={heroBentoLink("quote")}
+          />
         </div>
       </div>
       <div className="w-full flex gap-3 flex-col">

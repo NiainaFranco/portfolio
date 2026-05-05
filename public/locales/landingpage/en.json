@@ -1,20 +1,76 @@
 {
+   "Navigation": {
+      "home": "Home",
+      "services": "Services",
+      "aboutMe": "About Me",
+      "projects": "Projects",
+      "pricing": "Pricing",
+      "contacts": "Contacts"
+   },
    "HeroSection": {
       "jobName": "Software Developer",
-      "text": {
-         "text1": "I'm a Webpage designer, Software developer and IT consultant for production level Web-applications optimization",
-         "text2":  "I develop",
-         "text3": "Web-applications",
-         "text4": "create",
-         "text5": "Websites",
-         "text6": "and",
-         "text7": "optimize",
-         "text8": "your production system based on your target number of clients, and budgets"
-      },
+      "text1": "I'm a Webpage designer, Software developer and IT consultant for production level Web-applications optimization",
+      "text2": "I develop <highlight>Web-applications</highlight>, create <highlight>Websites</highlight>, and <highlight>optimize</highlight> your production system based on your target number of clients, and budgets",
       "bentoLink": {
          "frameworks": "Frameworks and tools used",
          "projects": "Projects MVP",
          "quote": "To make a quote"
       }
+   },
+   "ServicesSection": {
+      "boost": {
+         "title": "Create and <highlight>boost</highlight> your online visibility",
+         "text": "Let's make your business accessible for clients and potentiel parteners with a strong, clear, professional and beautifull website.",
+         "cta": "Get started"
+      },
+      "build": {
+         "title": "Build your digital solution with me <highlight>brick by brick</highlight>.",
+         "text": "Use your idea paired with my experiences to create and automate a solution that can solve your problems and quickly scale.",
+         "cta": "Start building"
+      },
+      "collaborate": {
+         "title": "Let's <highlight>collaborate</highlight> as professionals on your projects.",
+         "text": "I help you wrap up, bugfix and optimize your projects when you just don't have enough time or when you really want to hit the gas and clear your projects schedule.",
+         "cta": "Contact now"
+      }
+   },
+   "AboutMeSection": {
+      "title1": "I'm a <highlight> Javascript Developer</highlight>.",
+      "text": "I'm a software developer experienced with <highlight>web developement</highlight>. As such, my bread and butter is the Javascript language which is running on all modern browser and his vast ecosystem of library, frameworks and packages.",
+      "title2": "Platforms and Tools I use."
+   },
+   "ProjectsSection": {
+      "project1": "Realtime channel based messaging app using a WebSocket server paired with a Laravel Backend API and a React JS made UI.",
+      "project2": "All in one ecommerce management for Macramer products that has an admin dashboard page to manage what the customers can see in the presentation interface, and the sayed presentation interface made for customers to browse and order products catalogue."
+   },
+   "PricingSection": {
+      "website": {
+         "title": "Websites",
+         "developement": {
+            "title": "Developement",
+            "line1": "<highlight>50%</highlight> upfront.",
+            "line2": "<highlight>50%</highlight> on last presentation."
+         },
+         "maintenance": {
+            "title": "Maintenances",
+            "line1": "Starting from <highlight>50$/month</highlight>.",
+            "line2": "I will optimize your ressource usage based on the expected trafic."
+         }
+      },
+      "webApp": {
+         "title": "Web-applications",
+         "developement": {
+            "title": "Developement",
+            "line1": "Pricing isolated between each features.",
+            "line2": "Each feature is created within a cycle of developement.",
+            "line3": "<highlight>50%</highlight> before a developement cycle.",
+            "line4": "<highlight>50%</highlight> on delivery."
+         }
+      }
+   },
+   "ContactsSection": {
+      "title": "Software Developer",
+      "text1": "I develop <highlight>Web-applications</highlight>, create visual interfaces for <highlight>Websites</highlight>, and optimize your production system based on your <highlight>target number of clients</highlight>, and <highlight>budgets</highlight>.",
+      "text2": "I'm thrilled to work with you, contact me using the informations below."
    }
 }

@@ -4,33 +4,30 @@ import { GithubIcon } from "@/components/DynamiqueIcons/GithubIcon";
 import { MailIcon } from "@/components/DynamiqueIcons/MailIcon";
 import { WhatsappIcon } from "@/components/DynamiqueIcons/WhatsappIcon";
 import { SectionSeparator } from "@/components/SectionSeparator";
+import { useTranslations } from "next-intl";
+import { highlight } from "@/components/Highlight";
 
 export default function Footer() {
+  const t = useTranslations("ContactsSection");
+  const tnavigation = useTranslations("Navigation")
   return (
     <footer id="contacts" className="w-full mt-[80px] flex justify-center">
       <div className="lg:w-[var(--max-width)] w-full">
         <div className="lg:p-7 p-3">
-        <SectionSeparator>Contacts</SectionSeparator>
+        <SectionSeparator>{tnavigation("contacts")}</SectionSeparator>
           <div className="flex justify-between gap-3">
             <div className="lg:w-[500px] w-full rounded-2xl py-7">
               <h1 className="text-2xl">
                 Niaina Franco{" "}
-                <strong className="text-secondary font-damion">ROBERTO</strong>
+                <strong className="text-secondary">ROBERTO</strong>
               </h1>
-              <p className="text-4xl text-primary-900">Software Developer</p>
+              <p className="text-4xl text-primary-900">{t("title")}</p>
               <div className="mt-5 text-justify text-lg">
                 <p className="mt-4">
-                  I develop Web-applications, create visual interfaces for{" "}
-                  <span className="text-secondary">Showcase Webpage</span>, and
-                  optimize your production system based on your{" "}
-                  <span className="text-secondary">
-                    target number of clients
-                  </span>
-                  , and <span className="text-secondary">budgets</span>.
+                  {t.rich("text1", highlight())}
                 </p>
                 <p className="mt-4">
-                  I'm thrilled to work with you, contact me
-                  using the informations below.
+                  {t.rich("text2", highlight())}
                 </p>
                 <div className="flex flex-wrap gap-3 pt-3">
                   <ContactFooterBentoLink
