@@ -94,9 +94,6 @@ export function MobileTopBar() {
             <a className="w-[fit-content] relative block" href="#projects">
               {tnavigation("projects")}
             </a>
-            <a className="w-[fit-content] relative block" href="#pricing">
-              {tnavigation("pricing")}
-            </a>
             <a className="w-[fit-content] relative block" href="#contacts">
               {tnavigation("contacts")}
             </a>

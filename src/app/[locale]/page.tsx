@@ -19,7 +19,6 @@ export default function Portfolio(){
               <ServicesSection />
               <AboutMeSection />
               <ProjectsSection />
-              <PricingSection />
               <Footer />
             </div>
         </div>

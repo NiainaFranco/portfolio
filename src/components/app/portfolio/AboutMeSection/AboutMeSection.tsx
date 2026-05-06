@@ -24,7 +24,7 @@ export function AboutMeSection() {
       </div>
       <div className="flex w-full py-7 gap-7 justify-start">
           <img
-            className="w-[500px] md:w-[300px] md:h-[300px] hidden md:block lg:block h-[500px] rounded-3xl"
+            className="lg:w-[500px] md:w-[300px] md:h-[300px] hidden md:block lg:block lg:h-[500px] rounded-3xl"
             src={"/images/language-presentation-image.jpg"}
           />
         <div className="flex-1 relative flex flex-col gap-8 lg:p-3">

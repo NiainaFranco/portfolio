@@ -8,7 +8,7 @@
       "contacts": "Contacts"
    },
    "HeroSection": {
-      "jobName": "Software Developer",
+      "jobName": "Dévelopeur",
       "text1": "Je suis concepteur de page Web, développeur de logiciels et consultant informatique pour l'optimisation des applications Web de niveau de production.",
       "text2": "Je développe des <highlight>Applications Web</highlight>, <highlight>Sites web</highlight>, et <highlight>optimize</highlight> votre système de production en fonction de votre nombre cible de clients et de budgets.",
       "bentoLink": {
@@ -69,7 +69,7 @@
       }
    },
    "ContactsSection": {
-      "title": "Software Developer",
+      "title": "Dévelopeur",
       "text1": "Je développe des <highlight>Applications Web</highlight>, <highlight>Sites web</highlight>, et <highlight>optimize</highlight> votre système de production en fonction de votre nombre cible de clients et de budgets.",
       "text2": "Je suis impatient de travailler avec vous, contactez-moi en utilisant les informations ci-dessous."
    }

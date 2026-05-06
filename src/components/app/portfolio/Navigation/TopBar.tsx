@@ -84,9 +84,6 @@ export default function TopBar() {
             <a className="w-[fit-content] relative block" href="#projects">
               {t("projects")}
             </a>
-            <a className="w-[fit-content] relative block" href="#pricing">
-              {t("pricing")}
-            </a>
             <a className="w-[fit-content] relative block" href="#contacts">
               {t("contacts")}
             </a>
