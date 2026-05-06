@@ -30,7 +30,7 @@ export function ServicesSection() {
               </p>
             }
           >
-            <AnchorButton>{tboost("cta")}</AnchorButton>
+            <AnchorButton href="#projects">{tboost("cta")}</AnchorButton>
           </ServiceOffer>
           <div className="flex w-full justify-end">
             <ServiceOffer
@@ -46,7 +46,7 @@ export function ServicesSection() {
                 </p>
               }
             >
-              <AnchorButton>{tbuild("cta")}</AnchorButton>
+              <AnchorButton href="#projects">{tbuild("cta")}</AnchorButton>
             </ServiceOffer>
           </div>
           <ServiceOffer
@@ -62,7 +62,7 @@ export function ServicesSection() {
               </p>
             }
           >
-            <AnchorButton>{tcollaborate("cta")}</AnchorButton>
+            <AnchorButton href="#contacts">{tcollaborate("cta")}</AnchorButton>
           </ServiceOffer>
         </div>
       </div>
