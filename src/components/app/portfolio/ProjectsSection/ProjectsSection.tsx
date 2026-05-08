@@ -35,7 +35,7 @@ export default function ProjectsSection() {
               },
             ]}
           />
-          <ProjectPresentation
+          {/* <ProjectPresentation
             name="Mindi's"
             image="/images/mindi-s-project.png"
             technos={["Nest JS", "Angular", "Tailwind CSS", "PostgreSQL"]}
@@ -55,7 +55,7 @@ export default function ProjectsSection() {
                 link: "https://github.com/hidden-machina/mindi-s-dashboard-v2.git",
               },
             ]}
-          />
+          /> */}
         </div>
       </div>
     </div>

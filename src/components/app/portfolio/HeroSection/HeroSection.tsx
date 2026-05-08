@@ -40,7 +40,7 @@ export default function HeroSection() {
             aux={heroBentoLink("frameworks")}
           />
           <BentoLink
-            label={"2"}
+            label={"1"}
             href="#projects"
             aux={heroBentoLink("projects")}
           />
