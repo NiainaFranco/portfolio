@@ -46,7 +46,6 @@ export default function HeroSection() {
           />
           <BentoLink
             label={"0$"}
-            href="#pricing"
             aux={heroBentoLink("quote")}
           />
         </div>
